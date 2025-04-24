@@ -69,6 +69,132 @@
 
 
 
+<script>
+    function showWallet(wallet) {
+        const modal = document.getElementById('walletModal');
+        const walletAddress = document.getElementById('walletAddress');
+        
+        // Configura o endereço da carteira no modal
+        walletAddress.textContent = wallet || 'No address available';
+        
+        // Exibe o modal
+        modal.style.display = 'block';
+    }
+
+    function copyWallet() {
+        const walletAddress = document.getElementById('walletAddress').textContent;
+        navigator.clipboard.writeText(walletAddress).then(() => {
+            alert('Address copied to clipboard!');
+        }).catch((err) => {
+            alert('Error copying: ' + err);
+        });
+    }
+
+    function closeModal() {
+        document.getElementById('walletModal').style.display = 'none';
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<img 
+    src="static/images/bitcoin.jpg" 
+    alt="Bitcoin" 
+    style="top: 50px; left: 100px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/ethereum.jpg" 
+    alt="Ethereum" 
+    style="top: 100px; left: 150px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/binance.jpg" 
+    alt="Binance" 
+    style="top: 150px; left: 200px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/ripple.jpg" 
+    alt="Ripple" 
+    style="top: 200px; left: 250px; width:30px; height:30px;" 
+    onclick="showWallet('')">
+
+<img 
+    src="static/images/cardano.jpg" 
+    alt="Cardano" 
+    style="top: 250px; left: 300px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/render.jpg" 
+    alt="Render" 
+    style="top: 300px; left: 350px; width:30px; height:30px;" 
+    onclick="showWallet('')">
+
+<img 
+    src="static/images/solana.jpg" 
+    alt="Solana" 
+    style="top: 350px; left: 400px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/polkadot.jpg" 
+    alt="Polkadot" 
+    style="top: 400px; left: 450px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/dogecoin.jpg" 
+    alt="Dogecoin" 
+    style="top: 450px; left: 500px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/shiba.jpg" 
+    alt="Shiba" 
+    style="top: 500px; left: 550px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/tron.jpg" 
+    alt="Tron" 
+    style="top: 550px; left: 600px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/avalanchecoin.jpg" 
+    alt="Avalanchecoin" 
+    style="top: 600px; left: 650px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/litecoin.jpg" 
+    alt="Litecoin" 
+    style="top: 650px; left: 700px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+<img 
+    src="static/images/chainlink.jpg" 
+    alt="Chainlink" 
+    style="top: 700px; left: 750px; width:30px; height:30px;" 
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+
+
+
+
+
+
+
 
 
 
@@ -230,6 +356,16 @@ document.addEventListener("click", function(event) {
 
 
 
+
+
+
+
+<div id="walletModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; border: 2px solid black; padding: 20px; z-index: 1000;">
+    <p id="walletTitle" style="font-weight: bold;">Wallet Address:</p>
+    <p id="walletAddress" style="font-weight: bold;"></p>
+    <button onclick="copyWallet()">📋 Copy Address</button>
+    <button onclick="closeModal()">❌ Close</button>
+</div>
 
 
 
