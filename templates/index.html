@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases e Criptomoedas Orbitando</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+
+
+
+
+
+<header class="site-header">
+    <div class="logo-container">
+        <img src="{% static 'images/simbolo.png' %}" alt="Logo Munus">
+        <span class="site-name" data-lang="siteName">Munus</span>
+    </div>
+
+    <div class="menu-container">
+       <button class="menu-button" onclick="toggleMenu()">☰</button>
+       <button class="language-button" onclick="toggleLanguageMenu()">🌍 <span data-lang="language">Language</span></button>
+
+   <nav class="menu" id="menu">
+    <ul>
+        <li><a href="#" data-lang="whoWeAre">Who We Are</a></li>
+        <li><a href="#" data-lang="partners">Partners</a></li>
+        <li><a href="#" data-lang="donations">Donations</a></li>
+        <li><a href="#" data-lang="contact">Contact</a></li>
+        <li><button id="btnProjeto" data-lang="project">Project</button></li> <!-- Botão ajustado -->
+    </ul>
+    <button onclick="exitMenu()" data-lang="close">❌ Close</button>
+</nav>
+
+<div class="language-menu" id="languageMenu">
+    <button onclick="changeLanguage('pt')" data-lang="portuguese">Portuguese</button>
+    <button onclick="changeLanguage('en')" data-lang="english">English</button>
+    <button onclick="changeLanguage('es')" data-lang="spanish">Spanish</button>
+    <button onclick="changeLanguage('ar')" data-lang="arabic">Arabic</button>
+
+    <button onclick="exitMenu()" data-lang="close">❌ Close</button>
+</div>
+
+</header>
+
+
+
+
+<div class="container">
+    <!-- Círculo com Frases Orbitando -->
+    <div class="circle">
+        <div class="orbit-text" style="animation-delay: 0s;" data-lang="phrase1">Bitcoin is amazing!</div>
+        <div class="orbit-text" style="animation-delay: 1s;" data-lang="phrase2">Invest wisely.</div>
+        <div class="orbit-text" style="animation-delay: 2s;" data-lang="phrase3">Explore the crypto world.</div>
+        <div class="orbit-text" style="animation-delay: 3s;" data-lang="phrase4">Financial freedom.</div>
+        <div class="orbit-text" style="animation-delay: 4s;" data-lang="phrase5">Welcome to the future!</div>
+        <div class="orbit-text" style="animation-delay: 5s;" data-lang="phrase6">The digital revolution has arrived!</div>
+        <div class="orbit-text" style="animation-delay: 6s;" data-lang="phrase7">Security and transparency in blockchain.</div>
+        <div class="orbit-text" style="animation-delay: 7s;" data-lang="phrase8">Cryptocurrencies are the future.</div>
+        <div class="orbit-text" style="animation-delay: 8s;" data-lang="phrase9">Explore new opportunities.</div>
+        <div class="orbit-text" style="animation-delay: 9s;" data-lang="phrase10">Global financial innovation!</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+{% for data in combined_data %}
+    <img 
+        src="{% static 'images/'|add:data.image %}" 
+        alt="{{ data.image }}" 
+        style="top: {{ data.position.top }}px; left: {{ data.position.left }}px; width:30px; height:30px;"
+        onclick="showWallet('{{ data.wallet }}', '{{ data.image | cut:'.jpg' }}')"
+    >
+{% endfor %}
+
+
+    </div>
+</div>
+
+<!-- Modal para exibir endereço -->
+<div id="walletModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; border: 2px solid black; padding: 20px; z-index: 1000;">
+    <p id="walletTitle" style="font-weight: bold;">My wallet (Nome da Moeda)</p>
+    <p id="walletAddress" style="font-weight: bold;"></p>
+    <button id="copyButton" onclick="copyWallet()">📋 Copy Address</button>
+    <button id="closeButton" onclick="closeModal()">❌ Close</button>
+    
+
+</div>
+
+
+
+
+
+
+
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    function toggleLanguageMenu() {
+        var menu = document.getElementById("languageMenu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+   function changeLanguage(lang) {
+    if (lang === "pt") {
+        document.documentElement.lang = "pt-br";
+        alert("Idioma alterado para Português!");
+    } else if (lang === "en") {
+        document.documentElement.lang = "en";
+        alert("Language changed to English!");
+    } else if (lang === "es") {
+        document.documentElement.lang = "es";
+        alert("Idioma cambiado a Español!");
+    } else if (lang === "ar") {
+        document.documentElement.lang = "ar";
+        alert("تم تغيير اللغة إلى العربية!"); // Mensagem traduzida para árabe
+    }
+}
+
+        document.getElementById("languageMenu").style.display = "none";
+    }
+
+
+    function showWallet(wallet) {
+        const modal = document.getElementById('walletModal');
+        const walletAddress = document.getElementById('walletAddress');
+        walletAddress.textContent = wallet;
+        modal.style.display = 'block';
+    }
+
+    function copyWallet() {
+        const walletAddress = document.getElementById('walletAddress').textContent;
+        navigator.clipboard.writeText(walletAddress).then(() => {
+            alert("Address copied to clipboard!");
+        }).catch((err) => {
+            alert("Error copying:" + err);
+        });
+    }
+
+    function closeModal() {
+        document.getElementById('walletModal').style.display = 'none';
+    }
+
+</script>
+
+
+
+
+
+
+
+<!-- Modal do Projeto -->
+<div id="modalProjeto" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 data-lang="project">Project</h2>
+        <p id="textoProjeto"></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+    <hr class="footer-line"> <!-- Linha separadora -->
+    <nav class="footer-links">
+        <a href="#" onclick="toggleInfo('donation')">Donations</a> |
+        <a href="#" onclick="toggleInfo('contact')">Contact</a> |
+        <a href="#" onclick="toggleInfo('partners')">Partners</a>
+    </nav>
+
+    <div id="info-container">
+        <p id="donation" class="footer-info" style="display: none;">Informações sobre doações...</p>
+        <p id="contact" class="footer-info" style="display: none;">Informações de contato...</p>
+        <p id="partners" class="footer-info" style="display: none;">Informações sobre parceiros...</p>
+    </div>
+
+    <p class="footer-copyright">© 2025 - Munus. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+function toggleInfo(section) {
+    document.querySelectorAll('.footer-info').forEach(info => info.style.display = 'none');
+    document.getElementById(section).style.display = 'block';
+}
+</script>
+
+
+<script>
+document.addEventListener("click", function(event) {
+    const footer = document.querySelector(".site-footer");
+    const infoContainer = document.getElementById("info-container");
+    
+    // Verifica se o clique foi fora do rodapé e das opções abertas
+    if (!footer.contains(event.target)) {
+        document.querySelectorAll('.footer-info').forEach(info => info.style.display = "none");
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="{% static 'js/language.js' %}"></script>
+
+</body>
+</html>

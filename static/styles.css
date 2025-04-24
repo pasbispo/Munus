@@ -1,0 +1,401 @@
+/* Configuração do Corpo */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; /* Fundo azul claro */
+}
+
+/* Configuração do Círculo */
+.circle {
+    width: 400px; /* Diâmetro do círculo */
+    height: 400px;
+    border: 5px solid rgba(0, 0, 0, 0.2); /* Borda */
+    border-radius: 50%; /* Forma circular */
+    position: relative;
+    overflow: visible; /* Permite elementos fora do círculo */
+}
+/* Imagens dentro do Círculo */
+.circle img {
+    width: 30px; /* Tamanho ajustado */
+    height: 30px;
+    position: absolute;
+    border-radius: 50%; /* Imagens redondas */
+    transform: translate(-200%, -200%); /* Centraliza as imagens */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombreamento */
+
+    /* Movimento horizontal e vertical */
+    top: calc(var(--top-offset, 0) + 50%); /* Ajuste na direção vertical */
+    left: calc(var(--left-offset, 0) + 50%); /* Ajuste na direção horizontal */
+}
+
+/* Distribuição Radial das Imagens */
+.circle img:nth-of-type(1) { top: 20%; left: 50%; }
+.circle img:nth-of-type(2) { top: 35%; left: 75%; }
+.circle img:nth-of-type(3) { top: 65%; left: 75%; }
+.circle img:nth-of-type(4) { top: 80%; left: 50%; }
+.circle img:nth-of-type(5) { top: 65%; left: 25%; }
+.circle img:nth-of-type(6) { top: 35%; left: 25%; }
+
+
+
+/* Frases Orbitando Fora do Círculo */
+.orbit-text {
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    top: 44%;
+    left: 32%;
+    transform-origin: center -300px; /* Define a órbita */
+    animation: orbit 10s linear infinite;
+}
+
+/* Distribuição Uniforme das Frases */
+.orbit-text:nth-of-type(1) {
+    transform: rotate(0deg) translate(-300px, 0px) rotate(0deg);
+}
+.orbit-text:nth-of-type(2) {
+    transform: rotate(36deg) translate(-300px, 0px) rotate(-36deg);
+}
+.orbit-text:nth-of-type(3) {
+    transform: rotate(72deg) translate(-300px, 0px) rotate(-72deg);
+}
+.orbit-text:nth-of-type(4) {
+    transform: rotate(108deg) translate(-300px, 0px) rotate(-108deg);
+}
+.orbit-text:nth-of-type(5) {
+    transform: rotate(144deg) translate(-300px, 0px) rotate(-144deg);
+}
+.orbit-text:nth-of-type(6) {
+    transform: rotate(180deg) translate(-300px, 0px) rotate(-180deg);
+}
+.orbit-text:nth-of-type(7) {
+    transform: rotate(216deg) translate(-300px, 0px) rotate(-216deg);
+}
+.orbit-text:nth-of-type(8) {
+    transform: rotate(252deg) translate(-300px, 0px) rotate(-252deg);
+}
+.orbit-text:nth-of-type(9) {
+    transform: rotate(288deg) translate(-300px, 0px) rotate(-288deg);
+}
+.orbit-text:nth-of-type(10) {
+    transform: rotate(324deg) translate(-300px, 0px) rotate(-324deg);
+}
+
+/* Animação para Manter o Movimento */
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translate(-300px, 0px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-300px, 0px) rotate(-360deg);
+    }
+}
+
+/* Ajuste na velocidade da animação */
+.orbit-text {
+    animation: orbit 10s linear infinite; /* Aumentado de 10s para 20s */
+}
+
+
+
+
+.site-header {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 98%;
+    display: flex;
+    justify-content: space-between; /* Mantém o logo à esquerda e os botões à direita */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row; /* Agora os botões ficam lado a lado */
+    align-items: center;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.menu-button, .language-button {
+    background-color: #808080;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Posicionamento do Menu */
+.menu {
+    display: none; 
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.language-menu {
+    display: none; /* Começa invisível */
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body[lang="ar"] {
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+
+.language-menu button {
+    display: block;
+    background-color: #808080; /* Cinza */
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+
+
+.support-section, .donate-section {
+    flex: 1;
+    text-align: center;
+}
+
+.support-section h3, .donate-section h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.menu, .language-menu {
+    display: none; /* Inicialmente oculto */
+}
+
+.menu.active, .language-menu.active {
+    display: block; /* Exibe quando a classe 'active' é adicionada */
+}
+
+
+
+
+
+
+
+/* Estilização do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 800px;
+    text-align: left; /* Formato de carta */
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+
+
+
+
+
+
+
+/* Define a direção RTL apenas para textos no idioma árabe */
+html[lang="ar"] body {
+    direction: rtl;
+}
+
+/* Ajusta o posicionamento do menu e dos idiomas */
+html[lang="ar"] .menu-container,
+html[lang="ar"] .language-menu {
+    display: flex;
+    flex-direction: row-reverse; /* Mantém os botões e opções na ordem correta */
+    justify-content: flex-start; /* Alinha tudo à esquerda */
+}
+
+/* Ajusta corretamente o posicionamento das abas */
+html[lang="ar"] .menu, 
+html[lang="ar"] .language-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Garante que os itens fiquem organizados à esquerda */
+    text-align: left;
+}
+
+/* Corrige espaçamento dentro das abas */
+html[lang="ar"] .menu ul,
+html[lang="ar"] .language-menu button {
+    display: block;
+    text-align: left;
+}
+
+/* Mantém os botões e abas bem distribuídos */
+html[lang="ar"] .site-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajuste do rodapé super compacto e centralizado */
+.site-footer {
+    background: #f5f5f5;
+    color: #333;
+    font-size: 12px;
+    text-align: center; /* Centraliza o texto e os elementos */
+    padding: 2px 5px; /* Ajusta a altura mínima */
+    width: 100%;
+    position: fixed; /* Mantém no final da página */
+    bottom: 0;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os itens na largura */
+}
+
+/* Linha separadora */
+.footer-line {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 90%;
+    margin-bottom: 2px;
+}
+
+/* Links lado a lado */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Texto de direitos reservados */
+.footer-copyright {
+    margin-top: 3px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+

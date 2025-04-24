@@ -1,0 +1,54 @@
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-images: url('{% static "images/background.jpg" %}');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Container Principal */
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Sistema Solar */
+.solar-system {
+    position: relative;
+    height: 70vh; /* Altura para o sistema solar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagens no Centro */
+.center-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.center-images img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Frases em Órbita */
+.orbit-messages {
+    position: absolute;
+    width: 100%; /* Ocupa a área ao redor das imagens */
+    height: 100%; /* Ocupa a área para frases orbitarem */
+    top: 0;
+    left: 0;
+}
+
