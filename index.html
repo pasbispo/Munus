@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-       <meta charset="UTF-8">
+   
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frases e Criptomoedas Orbitando</title>
    <link rel="stylesheet" href="static/styles.css">
@@ -74,15 +75,21 @@
 
 
     
-
-{% for data in combined_data %}
-    <img 
-        src="{% static 'images/'|add:data.image %}" 
-        alt="{{ data.image }}" 
-        style="top: {{ data.position.top }}px; left: {{ data.position.left }}px; width:30px; height:30px;"
-        onclick="showWallet('{{ data.wallet }}', '{{ data.image | cut:'.jpg' }}')"
-    >
-{% endfor %}
+<img 
+    src="static/images/image1.png" 
+    alt="Image 1" 
+    style="top: 50px; left: 100px; width:30px; height:30px;" 
+    onclick="showWallet('wallet1')">
+<img 
+    src="static/images/image2.png" 
+    alt="Image 2" 
+    style="top: 100px; left: 150px; width:30px; height:30px;" 
+    onclick="showWallet('wallet2')">
+<img 
+    src="static/images/image3.png" 
+    alt="Image 3" 
+    style="top: 150px; left: 200px; width:30px; height:30px;" 
+    onclick="showWallet('wallet3')">
 
 
     </div>
