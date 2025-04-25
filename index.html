@@ -30,7 +30,7 @@
         <li><a href="#" data-lang="whoWeAre">Who We Are</a></li>
         <li><a href="#" data-lang="partners">Partners</a></li>
         <li><a href="#" data-lang="donations">Donations</a></li>
-        <li><a href="#" data-lang="contact">Contact</a></li>
+        <li><button onclick="openContact()">Contact</button></li>
         <li><button id="btnProjeto" data-lang="project">Project</button></li> <!-- Botão ajustado -->
     </ul>
     <button onclick="exitMenu()" data-lang="close">❌ Close</button>
@@ -46,6 +46,26 @@
 </div>
 
 </header>
+
+
+
+
+
+
+
+<!-- Modal de Contato -->
+<div class="contact-modal" id="contactModal">
+    <div class="contact-content">
+        <span class="close" onclick="closeContact()">❌</span>
+        <h2>Entre em Contato</h2>
+        <p>Email: contato@munus.com</p>
+        <p>Telefone: +55 71 9999-9999</p>
+        <p>Endereço: Rua Exemplo, 123, Salvador, BA, Brasil</p>
+    </div>
+</div>
+
+
+
 
 
 
@@ -667,19 +687,6 @@ document.addEventListener("click", function(event) {
     <button onclick="closeModal()">❌ Close</button>
 </div>
 
-
-
-
-
-
-
-<div class="modal-overlay"></div> <!-- Fundo escuro -->
-<div class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">❌</span>
-        <p>Texto dentro do modal!</p>
-    </div>
-</div>
 
 
 
