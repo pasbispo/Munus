@@ -283,7 +283,7 @@ body[lang="ar"] {
     top: 0;
     left: 0;
     width: 50vw; /* Largura total da tela */
-    height: 100vh; /* Altura total da tela */
+    height: 50vh; /* Altura total da tela */
     background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
     z-index: 999; /* Certifique-se que está abaixo do modal */
 }
