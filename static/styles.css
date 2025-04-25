@@ -277,6 +277,21 @@ body[lang="ar"] {
 }
 
 
+.modal-overlay {
+    display: none; /* Oculta o overlay até ser ativado */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Largura total da tela */
+    height: 100vh; /* Altura total da tela */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+    z-index: 999; /* Certifique-se que está abaixo do modal */
+}
+
+
+
+
+
 .close {
     position: absolute;
     top: 10px;
