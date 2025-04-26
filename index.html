@@ -30,8 +30,7 @@
         <li><a href="#" data-lang="whoWeAre">Who We Are</a></li>
         <li><a href="#" data-lang="partners">Partners</a></li>
         <li><a href="#" data-lang="donations">Donations</a></li>
-        
-        <li><button id="btnContact" data-lang="contact">Contact</button></li>
+        <li><button onclick="openContact()">Contact</button></li>
         <li><button id="btnProjeto" data-lang="project">Project</button></li> <!-- Botão ajustado -->
     </ul>
     <button onclick="exitMenu()" data-lang="close">❌ Close</button>
@@ -620,19 +619,6 @@ title="Xrp"
 
 
 
-<!-- Modal de Contato -->
-<div class="contact-modal" id="contactModal">
-    <div class="contact-content">
-        <span class="close" onclick="closeContact()">❌</span>
-        <h2 data-lang="contactTitle">Entre em Contato</h2>
-        <p data-lang="email">Email: contato@munus.com</p>
-        <p data-lang="phone">Telefone: +55 71 9999-9999</p>
-        <p data-lang="address">Endereço: Rua Exemplo, 123, Salvador, BA, Brasil</p>
-    </div>
-</div>
-
-
-
 
 
 
@@ -686,19 +672,6 @@ document.addEventListener("click", function(event) {
     <button onclick="copyWallet()">📋 Copy Address</button>
     <button onclick="closeModal()">❌ Close</button>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
