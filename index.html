@@ -162,7 +162,7 @@
     alt="Bitcoin" 
     title="Bitcoin"
     style="top: 100px; left: 190px; width:30px; height:30px;" 
-    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')">
+    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')"
     onclick="showWallet('Bitcoin - BTC', 'Smart Chain - BEP20')">
 
 <img 
@@ -684,6 +684,15 @@ title="Xrp"
 
 
 
+<script>
+function showWallet(cryptoName, network) {
+    // Seleciona o elemento que exibe a carteira
+    var walletDisplay = document.getElementById("wallet-info");
+
+    // Atualiza o texto exibido com o nome da criptomoeda e a rede
+    walletDisplay.innerHTML = cryptoName + " - " + network;
+}
+</script>
 
 
 
