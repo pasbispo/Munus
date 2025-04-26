@@ -376,6 +376,7 @@ const translations = {
             "email": "Email: contato@munus.com",
             "phone": "Phone: +55 71 9999-9999",
             "address": "Address: Rua Exemplo, 123, Salvador, BA, Brasil",
+            "partnersTitle": "Partners",
             "Address not available for this cryptocurrency.": "Address Not Available For this Cryptocurrency." 
     },
     "pt": {
@@ -407,6 +408,7 @@ const translations = {
         "email": "Email: contato@munus.com",
         "phone": "Telefone: +55 71 9999-9999",
         "address": "Endereço: Rua Exemplo, 123, Salvador, BA, Brasil",
+        "partnersTitle": "Parceiros",
         "Address not available for this cryptocurrency.": "Endereço não disponível para esta criptomoeda."
     },
     "es": {
@@ -438,6 +440,7 @@ const translations = {
          "email": "Correo electrónico: contato@munus.com",
          "phone": "Teléfono: +55 71 9999-9999",
          "address": "Dirección: Rua Exemplo, 123, Salvador, BA, Brasil",
+         "partnersTitle": "Socios",
          "Address not available for this cryptocurrency.": "Dirección no disponible para esta criptomoneda."
     },
     "ar": {
@@ -469,6 +472,7 @@ const translations = {
         "email": "البريد الإلكتروني: contato@munus.com",
     "phone": "الهاتف: +55 71 9999-9999",
         "address": "العنوان: Rua Exemplo, 123, Salvador, BA, Brasil",
+    "partnersTitle": "الشركاء",
         "Address not available for this cryptocurrency.": "العنوان غير متاح لهذه العملة المشفرة."
     }
 };
@@ -599,4 +603,37 @@ function closeContact() {
     contactModal.style.display = "none"; // Oculta o modal
 }
 
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btnPartners = document.getElementById("btnPartners");
+    const partnersModal = document.getElementById("partnersModal");
+    const closePartnersBtn = partnersModal.querySelector(".close");
+
+    // Abrir o modal de parceiros
+    btnPartners.addEventListener("click", function (event) {
+        event.preventDefault();
+        partnersModal.style.display = "block"; // Exibe o modal
+    });
+
+    // Fechar o modal de parceiros
+    closePartnersBtn.addEventListener("click", function () {
+        partnersModal.style.display = "none"; // Oculta o modal
+    });
+
+    // Fechar ao clicar fora do modal
+    window.addEventListener("click", function (event) {
+        if (event.target === partnersModal) {
+            partnersModal.style.display = "none";
+        }
+    });
+});
 
