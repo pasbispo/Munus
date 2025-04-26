@@ -30,6 +30,8 @@
         <li><a href="#" data-lang="whoWeAre">Who We Are</a></li>
         <li><a href="#" data-lang="partners">Partners</a></li>
         <li><a href="#" data-lang="donations">Donations</a></li>
+        <li><button onclick="openContact()" data-lang="contact">Contact</button></li>
+
         <li><button id="btnContact" data-lang="contact">Contact</button></li>
         <li><button id="btnProjeto" data-lang="project">Project</button></li> <!-- Botão ajustado -->
     </ul>
@@ -50,6 +52,25 @@
 
 
 
+<!-- Modal do Projeto -->
+<div id="modalProjeto" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 data-lang="project">Project</h2>
+        <p id="textoProjeto"></p>
+    </div>
+</div>
+
+
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 data-lang="contactTitle">Entre em Contato</h2>
+        <p data-lang="email">Email: contato@munus.com</p>
+        <p data-lang="phone">Telefone: +55 71 9999-9999</p>
+        <p data-lang="address">Endereço: Rua Exemplo, 123, Salvador, BA, Brasil</p>
+    </div>
+</div>
 
 
 
@@ -606,25 +627,6 @@ title="Xrp"
 
 
 
-<!-- Modal do Projeto -->
-<div id="modalProjeto" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 data-lang="project">Project</h2>
-        <p id="textoProjeto"></p>
-    </div>
-</div>
-
-
-<div id="contactModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 data-lang="contactTitle">Entre em Contato</h2>
-        <p data-lang="email">Email: contato@munus.com</p>
-        <p data-lang="phone">Telefone: +55 71 9999-9999</p>
-        <p data-lang="address">Endereço: Rua Exemplo, 123, Salvador, BA, Brasil</p>
-    </div>
-</div>
 
 
 

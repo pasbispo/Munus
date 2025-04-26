@@ -571,5 +571,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Função para abrir o modal de contato
+function openContact() {
+    const contactModal = document.getElementById("contactModal");
+    contactModal.style.display = "block"; // Exibe o modal
+}
+
+// Função para fechar o modal de contato
+function closeContact() {
+    const contactModal = document.getElementById("contactModal");
+    contactModal.style.display = "none"; // Oculta o modal
+}
 
 
