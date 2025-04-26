@@ -637,3 +637,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btnWhoWeAre = document.getElementById("btnWhoWeAre");
+    const whoWeAreModal = document.getElementById("whoWeAreModal");
+    const closeWhoWeAreBtn = whoWeAreModal.querySelector(".close");
+
+    // Abrir o modal "Who We Are"
+    btnWhoWeAre.addEventListener("click", function (event) {
+        event.preventDefault();
+        whoWeAreModal.style.display = "block"; // Exibe o modal
+    });
+
+    // Fechar o modal "Who We Are"
+    closeWhoWeAreBtn.addEventListener("click", function () {
+        whoWeAreModal.style.display = "none"; // Oculta o modal
+    });
+
+    // Fechar o modal ao clicar fora dele
+    window.addEventListener("click", function (event) {
+        if (event.target === whoWeAreModal) {
+            whoWeAreModal.style.display = "none";
+        }
+    });
+});
+
