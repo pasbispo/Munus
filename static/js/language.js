@@ -377,6 +377,7 @@ const translations = {
             "phone": "Phone: +55 71 9999-9999",
             "address": "Address: Rua Exemplo, 123, Salvador, BA, Brasil",
             "partnersTitle": "Partners",
+            "donationsTitle": "Donations",
             "Address not available for this cryptocurrency.": "Address Not Available For this Cryptocurrency." 
     },
     "pt": {
@@ -409,6 +410,7 @@ const translations = {
         "phone": "Telefone: +55 71 9999-9999",
         "address": "Endereço: Rua Exemplo, 123, Salvador, BA, Brasil",
         "partnersTitle": "Parceiros",
+        "donationsTitle": "Doações",
         "Address not available for this cryptocurrency.": "Endereço não disponível para esta criptomoeda."
     },
     "es": {
@@ -441,6 +443,7 @@ const translations = {
          "phone": "Teléfono: +55 71 9999-9999",
          "address": "Dirección: Rua Exemplo, 123, Salvador, BA, Brasil",
          "partnersTitle": "Socios",
+         "donationsTitle": "Donaciones",
          "Address not available for this cryptocurrency.": "Dirección no disponible para esta criptomoneda."
     },
     "ar": {
@@ -473,6 +476,7 @@ const translations = {
     "phone": "الهاتف: +55 71 9999-9999",
         "address": "العنوان: Rua Exemplo, 123, Salvador, BA, Brasil",
     "partnersTitle": "الشركاء",
+    "donationsTitle": "التبرعات",
         "Address not available for this cryptocurrency.": "العنوان غير متاح لهذه العملة المشفرة."
     }
 };
@@ -661,6 +665,32 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("click", function (event) {
         if (event.target === whoWeAreModal) {
             whoWeAreModal.style.display = "none";
+        }
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btnDonations = document.getElementById("btnDonations");
+    const donationsModal = document.getElementById("donationsModal");
+    const closeDonationsBtn = donationsModal.querySelector(".close");
+
+    // Abrir o modal Donations
+    btnDonations.addEventListener("click", function (event) {
+        event.preventDefault();
+        donationsModal.style.display = "block"; // Exibe o modal
+    });
+
+    // Fechar o modal Donations
+    closeDonationsBtn.addEventListener("click", function () {
+        donationsModal.style.display = "none"; // Oculta o modal
+    });
+
+    // Fechar ao clicar fora do modal
+    window.addEventListener("click", function (event) {
+        if (event.target === donationsModal) {
+            donationsModal.style.display = "none";
         }
     });
 });

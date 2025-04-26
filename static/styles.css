@@ -237,7 +237,7 @@ body[lang="ar"] {
 
 /* Estilização do modal */
 .modal {
-    display: none;
+    display: none; /* Inicialmente oculto */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -245,16 +245,22 @@ body[lang="ar"] {
     width: 80%;
     max-width: 600px;
     background-color: #f5f5f5;
+    color: #333;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    color: #333;
 }
 
 .modal-content {
     position: relative;
-    text-align: center;
+    text-align: left; /* Alinha os textos à esquerda */
+}
+
+.modal-content ul {
+    margin: 15px 0;
+    padding-left: 20px; /* Espaçamento das listas */
+    list-style-type: disc;
 }
 
 .modal-content .close {
@@ -265,6 +271,7 @@ body[lang="ar"] {
     cursor: pointer;
     color: red;
 }
+
 
 .modal-content ul {
     text-align: left;

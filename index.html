@@ -30,7 +30,8 @@
         
         <li><button id="btnWhoWeAre" data-lang="whoWeAre">Who We Are</button></li>
         <li><button id="btnPartners" data-lang="partners">Partners</button></li>
-        <li><a href="#" data-lang="donations">Donations</a></li>
+        
+        <li><button id="btnDonations" data-lang="donations">Donations</button></li>
         <li><button onclick="openContact()" data-lang="contact">Contact</button></li>
 
         <li><button id="btnProjeto" data-lang="project">Project</button></li> <!-- Botão ajustado -->
@@ -107,6 +108,33 @@
         </p>
     </div>
 </div>
+
+
+
+
+
+
+
+
+<!-- Modal Donations -->
+<div id="donationsModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeDonations()">❌</span>
+        <h2 data-lang="donationsTitle">Doações</h2>
+        <ul>
+            <li><strong>PayPal:</strong> seu-email-paypal@email.com</li>
+            <li><strong>MercadoPago:</strong> sua-chave-mercado-pago</li>
+            <li><strong>Pix:</strong> sua-chave-pix</li>
+            <li><strong>Banco:</strong> Banco Exemplo, Agência: 1234, Conta: 56789-0</li>
+            <li><strong>Criptomoedas:</strong> BTC: 0xBitcoinEndereço | ETH: 0xEthereumEndereço</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
 
 
 
