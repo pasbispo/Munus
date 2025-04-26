@@ -154,7 +154,6 @@
         <div class="orbit-text" style="animation-delay: 7s;" data-lang="phrase8">Cryptocurrencies are the future.</div>
         <div class="orbit-text" style="animation-delay: 8s;" data-lang="phrase9">Explore new opportunities.</div>
         <div class="orbit-text" style="animation-delay: 9s;" data-lang="phrase10">Global financial innovation!</div>
-<div id="wallet-info">My wallet (undefined)</div>
 
         <!-- Imagens dentro do círculo -->
        
@@ -163,8 +162,8 @@
     alt="Bitcoin" 
     title="Bitcoin"
     style="top: 100px; left: 190px; width:30px; height:30px;" 
-    onclick="showWallet('0x6a23069386dbf659c2167052b905a079902e99ce')"
-    onclick="showWallet('Bitcoin - BTC', 'Smart Chain - BEP20')">
+     onclick="showWallet('Bitcoin - BTC', 'Smart Chain - BEP20', '0x6a23069386dbf659c2167052b905a079902e99ce')">
+
 
 <img 
     src="static/images/ethereum.jpg" 
@@ -685,15 +684,6 @@ title="Xrp"
 
 
 
-<script>
-function showWallet(cryptoName, network) {
-    // Seleciona o elemento que exibe a carteira
-    var walletDisplay = document.getElementById("wallet-info");
-
-    // Atualiza o texto exibido com o nome da criptomoeda e a rede
-    walletDisplay.innerHTML = cryptoName + " - " + network;
-}
-</script>
 
 
 

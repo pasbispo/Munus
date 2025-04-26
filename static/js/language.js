@@ -695,3 +695,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
+function showWallet(cryptoName, network, address) {
+    // Seleciona o elemento da aba que exibe as informações
+    var walletDisplay = document.getElementById("wallet-info");
+    var walletAddress = document.getElementById("wallet-address");
+
+    // Atualiza os elementos com os valores corretos
+    walletDisplay.innerHTML = cryptoName + " (" + network + ")";
+    walletAddress.innerHTML = "Endereço: " + address;
+}
