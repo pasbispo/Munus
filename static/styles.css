@@ -426,6 +426,35 @@ html[lang="ar"] .site-header {
 
 
 
+.contact-modal {
+    display: none; /* Oculto até ser ativado */
+    position: fixed; /* Fixa no meio da tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Compensa o deslocamento */
+    width: 80%; /* Ajusta a largura do modal */
+    max-width: 600px; /* Define um limite para o tamanho */
+    background-color: #f5f5f5; /* Cor de fundo agradável */
+    color: #333; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+    z-index: 1000; /* Mantém acima de outros elementos */
+    text-align: center; /* Centraliza o texto */
+}
+
+.contact-content p {
+    margin: 10px 0; /* Adiciona espaçamento entre os parágrafos */
+}
+
+.contact-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
 
 
 
