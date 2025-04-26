@@ -372,6 +372,10 @@ const translations = {
             "spanish": "Spanish",
             "arabic": "Arabic", 
             "close": "Close",
+            "contactTitle": "Contact Us",
+            "email": "Email: contato@munus.com",
+            "phone": "Phone: +55 71 9999-9999",
+            "address": "Address: Rua Exemplo, 123, Salvador, BA, Brasil",
             "Address not available for this cryptocurrency.": "Address Not Available For this Cryptocurrency." 
     },
     "pt": {
@@ -399,6 +403,10 @@ const translations = {
         "spanish":"Espanhou",
         "arabic": "Árabe",
         "close": "Fechar",
+        "contactTitle": "Entre em Contato",
+        "email": "Email: contato@munus.com",
+        "phone": "Telefone: +55 71 9999-9999",
+        "address": "Endereço: Rua Exemplo, 123, Salvador, BA, Brasil",
         "Address not available for this cryptocurrency.": "Endereço não disponível para esta criptomoeda."
     },
     "es": {
@@ -426,13 +434,17 @@ const translations = {
          "spanish": "Espanhol",
          "arabic": "Árabe",
          "close": "Cerrar",
-          "Address not available for this cryptocurrency.": "Dirección no disponible para esta criptomoneda."
+         "contactTitle": "Contáctenos",
+         "email": "Correo electrónico: contato@munus.com",
+         "phone": "Teléfono: +55 71 9999-9999",
+         "address": "Dirección: Rua Exemplo, 123, Salvador, BA, Brasil",
+         "Address not available for this cryptocurrency.": "Dirección no disponible para esta criptomoneda."
     },
     "ar": {
         "language": "اللغة",
                 "menuButton": "☰ القائمة",
                 "phrase1": "العربية",
-        "siteName": "مونوس",
+                "siteName": "مونوس",
                 "project": "المشروع",
                 "phrase2": "دخل المجتمع",
                 "phrase3": "زراعة مبتكرة",
@@ -453,6 +465,10 @@ const translations = {
         "spanish": "الإسبانية",
         "arabic": "العربية",
         "close": "إغلاق",
+    "contactTitle": "اتصل بنا",
+        "email": "البريد الإلكتروني: contato@munus.com",
+    "phone": "الهاتف: +55 71 9999-9999",
+        "address": "العنوان: Rua Exemplo, 123, Salvador, BA, Brasil",
         "Address not available for this cryptocurrency.": "العنوان غير متاح لهذه العملة المشفرة."
     }
 };
