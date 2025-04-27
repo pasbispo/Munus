@@ -334,6 +334,10 @@ function closeModal() {
 }
 
 
+function closeModal() {
+    var walletModal = document.getElementById("walletModal");
+    walletModal.style.display = "none";
+}
 
 
 
@@ -696,3 +700,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+function showWallet(cryptoName, network, address) {
+    // Obtém os elementos do modal
+    var walletTitle = document.getElementById("walletTitle");
+    var walletAddress = document.getElementById("walletAddress");
+    var walletModal = document.getElementById("walletModal");
+
+    // Atualiza os textos do modal
+    walletTitle.innerHTML = cryptoName + " (" + network + ")";
+    walletAddress.innerHTML = "Endereço: " + address;
+
+    // Exibe o modal
+    walletModal.style.display = "block";
+}
