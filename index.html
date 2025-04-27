@@ -166,7 +166,7 @@
     alt="Bitcoin" 
     title="Bitcoin"
     style="top: 100px; left: 190px; width:30px; height:30px;" 
-    onclick="showWallet('Bitcoin', '0x6a23069386dbf659c2167052b905a079902e99ce')">
+    onclick="showWallet('Bitcoin - BEP20 (outras redes em Doação): 0x6a23069386dbf659c2167052b905a079902e99ce')">
 
 <img 
     src="static/images/ethereum.jpg" 
@@ -741,10 +741,11 @@ document.addEventListener("click", function(event) {
 
 <div id="walletModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; border: 2px solid black; padding: 20px; z-index: 1000;">
     <p id="walletTitle" style="font-weight: bold;">Wallet Address:</p>
-    <p id="walletAddress" style="font-weight: bold;">Endereço: </p>
+    <p id="walletAddress" style="font-weight: bold;"></p>
     <button onclick="copyWallet()">📋 Copy Address</button>
     <button onclick="closeModal()">❌ Close</button>
 </div>
+
 
 
 
