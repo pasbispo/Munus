@@ -701,17 +701,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-function showWallet(cryptoName, address) {
-    // Obtém os elementos do modal
-    var walletTitle = document.getElementById("walletTitle");
-    var walletAddress = document.getElementById("walletAddress");
-    var walletModal = document.getElementById("walletModal");
-
-    // Atualiza os textos do modal
-    walletTitle.innerHTML = cryptoName; // Nome da criptomoeda
-    walletAddress.innerHTML = "Endereço: " + address; // Endereço da carteira
-
-    // Exibe o modal
-    walletModal.style.display = "block";
-}
-
