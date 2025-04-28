@@ -97,33 +97,17 @@
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradução</title>
-    <script type="module" src="translations.js"></script>
-</head>
-<body>
-    <h1>Texto Traduzido</h1>
-    <div id="translated-text"></div>
-    <button onclick="updateText('pt')">Português</button>
-    <button onclick="updateText('ar')">Árabe</button>
-    <button onclick="updateText('en')">Inglês</button>
-    <button onclick="updateText('es')">Espanhol</button>
 
-    <script type="module">
-        import { translateText } from './translations.js';
-
-        function updateText(language) {
-            const textDiv = document.getElementById('translated-text');
-            textDiv.innerHTML = translateText(language);
-        }
-        updateText('pt'); // Define o texto inicial como Português
-    </script>
-</body>
-</html>
+<!-- Modal Who We Are -->
+<div id="whoWeAreModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeWhoWeAre()">❌</span>
+        <h2 data-lang="whoWeAreTitle">Quem Somos</h2>
+        <p id="whoWeAreText">
+            Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação. Trabalhamos juntos para transformar espaços urbanos em áreas produtivas, promovendo inclusão financeira e educação agrícola.
+        </p>
+    </div>
+</div>
 
 
 
