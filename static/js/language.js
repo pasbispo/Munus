@@ -642,6 +642,45 @@ export function getTranslation(language) {
 
 
 
+
+import { getTranslation } from './static/scripts/translations.js';
+
+// Vincula o evento ao botão "Who We Are"
+document.getElementById('btnWhoWeAre').addEventListener('click', () => {
+    const modal = document.getElementById('whoWeAreModal'); // Modal correspondente ao "Who We Are"
+    const textContainer = document.getElementById('whoWeAreText'); // Elemento de texto no modal
+
+    // Obtém o idioma ativo
+    const selectedLanguage = document.querySelector('.language-menu button.active')?.getAttribute('data-lang') || 'pt';
+
+    // Atualiza o texto no modal com a tradução
+    textContainer.innerHTML = getTranslation(selectedLanguage);
+
+    // Exibe o modal
+    modal.style.display = 'block';
+});
+
+// Função para fechar o modal
+function closeWhoWeAre() {
+    const modal = document.getElementById('whoWeAreModal');
+    modal.style.display = 'none';
+}
+
+// Fecha o modal ao clicar no botão "close"
+document.querySelector('#whoWeAreModal .close').addEventListener('click', closeWhoWeAre);
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Função para abrir o modal de contato
 function openContact() {
     const contactModal = document.getElementById("contactModal");
