@@ -567,20 +567,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
         Nuestra misión es facilitar el acceso a la producción local de alimentos, ayudando a que prospere y creando oportunidades de alimentación y economía sostenibles. Además, buscamos construir un futuro más verde y productivo, en el que cada agricultor urbano tenga los recursos necesarios para cultivar sus plantaciones.<br><br>
 
-        Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios a la sociedad. Como este es un proyecto social sin patrocinio, pedimos su ayuda con la recaudación. Nuestro principal método de recaudación es a través de criptomonedas, garantizando seguridad, transparencia y eficiencia financiera. También aceptamos otras formas de donación, permitiendo que más personas contribuyan al crecimiento del proyecto.</strong>`,
+        Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios a la sociedad. Como este es un proyecto social sin patrocinio, pedimos su ayuda con la recaudación. Nuestro principal método de recaudación es a través de criptomonedas, garantizando seguridad, transparencia y eficiencia financiera. También aceptamos otras formas de donación, permitiendo que más personas contribuyan al crecimiento del proyecto.</strong>
 
 
         "ar": `<strong>أعزائي المتعاونين،</strong><br><br>
-       
-       "مشروع زراعة الأرفف" هو مبادرة للزراعة الحضرية المستدامة، تركز على الابتكار في زراعة الأغذية والنباتات الطبية. هدفنا هو تحويل المساحات المنزلية إلى مناطق إنتاجية، خاصة في المساحات الصغيرة، وتعزيز وجود حديقة طبيعية في المنزل.<br><br>
+         
 
-في منازلنا، يمكننا أن نستخدم الخزانات لزراعة النباتات التي تهدف إلى تناول غذاء أكثر صحة. في العديد من المنازل، لا توجد                    مساحة كافية لزراعة الطماطم، الفلفل، البصل، الكزبرة، النعناع، الريحان، والمحاصيل الأخرى القابلة للزراعة. ولكن، يمكن تخصيص رف صغير قرب النافذة أو في الممر لزراعة النباتات التي تدعم التغذية. أما في المنازل ذات المساحات الأكبر، مثل الأسطح غير المستغلة، يمكن تركيب خزانات تحتوي على عدة أرفف ونباتات مخصصة لتلبية احتياجات سكان المنزل. في حالة وجود فائض في الإنتاج، يمكن استخدامه حتى لتحقيق دخل إضافي.<br><br>
 
-مهمتنا هي تسهيل الوصول إلى الإنتاج المحلي للأغذية، ومساعدته على الازدهار وخلق فرص اقتصادية وغذائية مستدامة. بالإضافة     إلى ذلك، نسعى إلى بناء مستقبل أكثر خضرة وإنتاجية، حيث يتمكن كل مزارع حضري من الحصول على الموارد اللازمة لزراعة محاصيله.<br><br>
 
-ندرك أن مشروعنا هو مشروع مؤثر ويجلب العديد من الفوائد للمجتمع. وباعتباره مشروعًا اجتماعيًا بدون رعاية، نطلب مساعدتكم في جمع التبرعات. طريقتنا الرئيسية لجمع التبرعات هي من خلال العملات المشفرة، مما يضمن الأمان والشفافية والكفاءة المالية. كما نقبل أشكالًا أخرى من التبرعات، مما يسمح لعدد أكبر من الناس بالمساهمة في نمو المشروع.</strong>`,
 
-   };
+
+        مشروع زراعة بلاتيليرا هو مبادرة للزراعة الحضرية المستدامة، تركز على الابتكار في زراعة الأغذية والأعشاب الطبية. هدفنا هو تحويل المساحات الحضرية إلى مناطق منتجة، وتعزيز الاستقلال المالي للمزارعين الحضريين.<br><br>
+
+        نستثمر في تقنيات حديثة لزراعة الطماطم، الفلفل، البصل، الكزبرة، النعناع، الريحان، والمحاصيل الأخرى القابلة للزراعة. ستخصص الأموال التي يتم جمعها **بشكل حصري لتطوير المشروع**، مما يضمن الاستثمار في البنية التحتية، ودفع أجور الموظفين، وإنشاء منح تدريبية للشباب المتدربين.<br><br>
+
+        مهمتنا هي تسهيل الوصول إلى إنتاج الغذاء المحلي، ومساعدة المجتمعات على الازدهار، وخلق فرص اقتصادية مستدامة. بالإضافة إلى ذلك، فإن طريقتنا الرئيسية لجمع التبرعات هي من خلال **العملات المشفرة**، مما يضمن الأمن والشفافية والكفاءة المالية. كما نقبل أشكالًا أخرى من التبرعات، مما يسمح لمزيد من الأشخاص بالمساهمة في نمو المشروع.<br><br>
+
+        من خلال التكنولوجيا والممارسات البيئية، نسعى إلى بناء مستقبل أكثر خضرة وإنتاجية، حيث يكون لكل مزارع حضري الموارد اللازمة لزراعة محاصيله وبيعها. **يبدأ الابتكار في الزراعة الحضرية هنا!**`
+    };
 
     function obterTextoProjeto(lang) {
         return textos[lang] || textos["en"];
