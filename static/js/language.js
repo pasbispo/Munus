@@ -581,7 +581,6 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
 };
 
 
-
     // Função para obter textos dinâmicos
     function obterTexto(tipo, lang) {
         return textos[tipo][lang] || textos[tipo]["en"]; // En como fallback
@@ -649,6 +648,15 @@ function closeContact() {
 
 
 
+
+// Função para traduzir o texto
+function translateText(language) {
+    // Obtém o elemento do HTML pelo ID
+    const textElement = document.getElementById("whoWeAreText");
+    
+    // Atualiza o texto com base na tradução selecionada
+    textElement.innerHTML = translations[language] || translations["pt"]; // Padrão: português
+}
 
 
 
