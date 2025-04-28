@@ -804,7 +804,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeBtnPartners = modalPartners.querySelector(".close");
 
     const textosPartners = {
-        "en":Binance `
+        "en":`
         <li>John & Sons</li>
         <li>Green Earth Initiatives</li>
         <li>Urban Farmers United</li>
@@ -878,7 +878,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const btnContact = document.getElementById("btnContact");
     const modalContact = document.getElementById("contactModal");
-    const contactText = modalContact.querySelector("#contactText");
+    const contactText = document.getElementById("contactText");
     const closeBtnContact = modalContact.querySelector(".close");
 
     const textosContact = {
@@ -910,7 +910,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function atualizarTextoModalContact() {
         const langAtual = document.documentElement.lang || "en";
-        contactText.innerHTML = obterTextoContact(langAtual);
+        contactText.innerHTML = obterTextoContact(langAtual); // Atualiza dinamicamente o conteúdo do modal
     }
 
     btnContact.addEventListener("click", function (event) {
@@ -929,8 +929,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-
 
 
 
