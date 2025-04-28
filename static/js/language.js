@@ -570,14 +570,6 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
     };
 
 
-const textos = {
-    en: `<strong>Who We Are</strong><br>Our team consists of professionals passionate about sustainability and innovation. We work together to transform urban spaces into productive areas, promoting financial inclusion and agricultural education.`,
-    pt: `<strong>Quem Somos</strong><br>Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação. Trabalhamos juntos para transformar espaços urbanos em áreas produtivas, promovendo inclusão financeira e educação agrícola.`,
-    es: `<strong>Quiénes Somos</strong><br>Nuestro equipo está compuesto por profesionales apasionados por la sostenibilidad y la innovación. Trabajamos juntos para transformar espacios urbanos en áreas productivas, promoviendo inclusión financiera y educación agrícola.`,
-    ar: `<strong>من نحن</strong><br>يتكون فريقنا من محترفين شغوفين بالاستدامة والابتكار. نعمل معًا لتحويل المساحات الحضرية إلى مناطق إنتاجية، مع تعزيز الشمول المالي والتعليم الزراعي.`
-};
-
-
 
     function obterTextoProjeto(lang) {
         return textos[lang] || textos["en"];
