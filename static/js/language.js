@@ -630,13 +630,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const textosWhoWeAre = {
         "en": `<strong>Our team is made up of professionals passionate about sustainability and innovation.</strong><br><br>
-We work together to transform urban spaces into productive areas, promoting financial inclusion and agricultural education.`,
+We are passionate about sustainability and innovation, and our purpose is to transform urban spaces into productive areas, promoting agricultural educational inclusion in urban settings. Through collective efforts, we aim not only to positively impact the environment but also to encourage agricultural practices in urban environments, contributing to awareness and the empowerment of local communities.
+
+My academic background is in Physics, a field entirely different from what we are discussing here. However, my passion for agriculture has always been present. In 2025, after joining the Brazilian Agricultural Research Corporation (Embrapa) and learning about the Embrapa Master Plan (2024–2030) during my studies, I realized the importance of finding alternatives to produce food sustainably. This realization was driven by challenges such as global warming, rising food costs, and the need to reduce the consumption of pesticides through healthier eating practices.
+
+Faced with this reality, the idea of initiating a project aimed at promoting urban and self-sustaining agricultural practices emerged. To make this project viable, I decided to create a website dedicated to fundraising. The innovation here lies in seeking resources primarily through cryptocurrencies, offering a different and modern way of financing capable of attracting supporters with an innovative profile.
+
+The project is inspired by a vision of transformation. We believe that by merging technology, sustainability, and urban agricultural practices, we can contribute to building a more balanced and resilient future, where every individual has the opportunity to produce their own food sustainably.`,
+
+
+
+
         "pt": `<strong>Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação.</strong><br><br>
 Trabalhamos juntos para transformar espaços urbanos em áreas produtivas, promovendo inclusão financeira e educação agrícola.`,
         "es": `<strong>Nuestro equipo está compuesto por profesionales apasionados por la sostenibilidad y la innovación.</strong><br><br>
-Trabajamos juntos para transformar espacios urbanos en áreas productivas, promoviendo la inclusión financiera y la educación agrícola.`,
+Nos apasiona la sostenibilidad y la innovación, y nuestro propósito es transformar espacios urbanos en áreas productivas, promoviendo la inclusión educativa agrícola en entornos urbanos. A través de esfuerzos colectivos, buscamos no solo impactar positivamente el medio ambiente, sino también fomentar prácticas agrícolas en entornos urbanos, contribuyendo a la concienciación y la formación de las comunidades locales.
+
+Mi formación académica es en Física, un campo completamente distinto al que abordamos aquí. Sin embargo, siempre he sentido pasión por la agricultura. En 2025, después de unirme a la Empresa Brasileña de Investigación Agropecuaria (Embrapa) y al estudiar el Plan Maestro de Embrapa (2024-2030), comprendí la importancia de buscar alternativas para producir alimentos de manera autosostenible. Esta conciencia surgió debido a los desafíos impuestos por el calentamiento global, el aumento de los costos de los alimentos y la necesidad de reducir el consumo de pesticidas mediante prácticas alimentarias más saludables.
+
+Ante esta realidad, surgió la idea de comenzar un proyecto destinado a fomentar prácticas agrícolas urbanas y autosostenibles. Para hacer viable este proyecto, decidí crear un sitio web dedicado a recaudar fondos. La innovación aquí es buscar recursos principalmente a través de criptomonedas, ofreciendo un formato de financiamiento diferente y moderno capaz de atraer apoyos con perfil innovador.
+
+El proyecto está inspirado en un ideal de transformación. Creemos que, al combinar tecnología, sostenibilidad y prácticas agrícolas urbanas, podemos contribuir a la construcción de un futuro más equilibrado y resiliente, donde cada individuo tenga la oportunidad de producir sus propios alimentos de manera sostenible.`,
+
         "ar": `<strong>يتكون فريقنا من محترفين شغوفين بالاستدامة والابتكار.</strong><br><br>
-نحن نعمل معًا لتحويل المساحات الحضرية إلى مناطق منتجة، وتعزيز الشمول المالي والتعليم الزراعي.`
+نحن شغوفون بالاستدامة والابتكار، وهدفنا هو تحويل المساحات الحضرية إلى مناطق منتجة، وتعزيز الإدماج التعليمي الزراعي الحضري. من خلال الجهود المشتركة، نسعى ليس فقط للتأثير إيجابياً على البيئة، ولكن أيضاً لتشجيع الممارسات الزراعية في البيئات الحضرية، والمساهمة في تعزيز الوعي وتشكيل المجتمعات المحلية.
+
+تخصصي الأكاديمي هو في مجال الفيزياء، وهو مجال مختلف تماماً عما نتحدث عنه هنا. ومع ذلك، كان شغفي بالزراعة دائماً حاضراً. في عام 2025، وبعد أن تقدمت للانضمام إلى شركة أبحاث الزراعة البرازيلية (Embrapa)، واطلعت خلال الدراسة على الخطة الرئيسية لشركة Embrapa (2024-2030)، أدركت أهمية البحث عن بدائل لإنتاج الغذاء بشكل مستدام. هذا الإدراك جاء نتيجة التحديات التي يفرضها الاحترار العالمي، وزيادة تكاليف الغذاء، والحاجة إلى تقليل استهلاك المبيدات الكيميائية عبر التغذية الصحية.
+
+أمام هذه الحقيقة، ظهرت فكرة إنشاء مشروع يهدف إلى تشجيع الممارسات الزراعية الحضرية والمستدامة ذاتياً. ولجعل هذا المشروع قابلاً للتنفيذ، قررت إنشاء موقع إلكتروني مخصص لجمع الأموال. الفكرة المبتكرة هنا هي البحث عن الموارد بشكل رئيسي من خلال العملات الرقمية، مما يوفر طريقة تمويل مختلفة وحديثة، قادرة على جذب داعمين يتمتعون برؤية مبتكرة.
+
+المشروع مدفوع بفكرة التحول. نحن نعتقد أنه من خلال دمج التكنولوجيا والاستدامة والممارسات الزراعية الحضرية، يمكننا المساهمة في بناء مستقبل أكثر توازناً ومرونة، حيث يكون لكل فرد فرصة لإنتاج غذائه الخاص بطريقة مستدامة..`
     };
 
     function obterTextoWhoWeAre(lang) {
