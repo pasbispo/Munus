@@ -103,18 +103,13 @@
 
 
 
-<!-- Modal Donations -->
+<li><button id="btnDonations" data-lang="donations">Donations</button></li>
+
 <div id="donationsModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeDonations()">❌</span>
         <h2 data-lang="donationsTitle">Doações</h2>
-        <ul>
-            <li><strong>PayPal:</strong> seu-email-paypal@email.com</li>
-            <li><strong>MercadoPago:</strong> sua-chave-mercado-pago</li>
-            <li><strong>Pix:</strong> sua-chave-pix</li>
-            <li><strong>Banco:</strong> Banco Exemplo, Agência: 1234, Conta: 56789-0</li>
-            <li><strong>Criptomoedas:</strong> BTC: 0xBitcoinEndereço | ETH: 0xEthereumEndereço</li>
-        </ul>
+        <ul id="donationsText"></ul>
     </div>
 </div>
 

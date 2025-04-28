@@ -714,6 +714,86 @@ El proyecto está inspirado en un ideal de transformación. Creemos que, al comb
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const btnDonations = document.getElementById("btnDonations");
+    const modalDonations = document.getElementById("donationsModal");
+    const textoDonations = modalDonations.querySelector("ul");
+    const closeBtnDonations = modalDonations.querySelector(".close");
+
+    const textosDonations = {
+        "en": `
+        <li><strong>PayPal:</strong> your-paypal-email@email.com</li>
+        <li><strong>MercadoPago:</strong> your-mercado-pago-key</li>
+        <li><strong>Pix:</strong> your-pix-key</li>
+        <li><strong>Bank:</strong> Example Bank, Branch: 1234, Account: 56789-0</li>
+        <li><strong>Cryptocurrencies:</strong> BTC: 0xBitcoinAddress | ETH: 0xEthereumAddress</li>
+        `,
+        "pt": `
+        <li><strong>PayPal:</strong> seu-email-paypal@email.com</li>
+        <li><strong>MercadoPago:</strong> sua-chave-mercado-pago</li>
+        <li><strong>Pix:</strong> sua-chave-pix</li>
+        <li><strong>Banco:</strong> Banco Exemplo, Agência: 1234, Conta: 56789-0</li>
+        <li><strong>Criptomoedas:</strong> BTC: 0xEndereçoBitcoin | ETH: 0xEndereçoEthereum</li>
+        `,
+        "es": `
+        <li><strong>PayPal:</strong> su-email-paypal@email.com</li>
+        <li><strong>MercadoPago:</strong> su-clave-mercado-pago</li>
+        <li><strong>Pix:</strong> su-clave-pix</li>
+        <li><strong>Banco:</strong> Banco Ejemplo, Sucursal: 1234, Cuenta: 56789-0</li>
+        <li><strong>Criptomonedas:</strong> BTC: 0xDireccionBitcoin | ETH: 0xDireccionEthereum</li>
+        `,
+        "ar": `
+        <li><strong>PayPal:</strong> بريدك الإلكتروني-لـPayPal@email.com</li>
+        <li><strong>MercadoPago:</strong> مفتاح-سوق-مدفوعاتك</li>
+        <li><strong>Pix:</strong> مفتاح Pix الخاص بك</li>
+        <li><strong>البنك:</strong> بنك المثال، الفرع: 1234، الحساب: 56789-0</li>
+        <li><strong>العملات المشفرة:</strong> BTC: 0xعنوانBitcoin | ETH: 0xعنوانEthereum</li>
+        `
+    };
+
+    function obterTextoDonations(lang) {
+        return textosDonations[lang] || textosDonations["en"];
+    }
+
+    function atualizarTextoModalDonations() {
+        const langAtual = document.documentElement.lang || "en";
+        textoDonations.innerHTML = obterTextoDonations(langAtual);
+    }
+
+    btnDonations.addEventListener("click", function (event) {
+        event.preventDefault();
+        atualizarTextoModalDonations(); // Atualiza o texto antes de abrir o modal
+        modalDonations.style.display = "flex";
+    });
+
+    closeBtnDonations.addEventListener("click", function () {
+        modalDonations.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modalDonations) {
+            modalDonations.style.display = "none";
+        }
+    });
+
+    document.querySelectorAll("[data-lang]").forEach(element => {
+        const key = element.getAttribute("data-lang");
+        if (textosDonations[document.documentElement.lang] && textosDonations[document.documentElement.lang][key]) {
+            element.textContent = textosDonations[document.documentElement.lang][key];
+        } else {
+            console.warn(`Chave de tradução não encontrada: ${key}`);
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
 
 
 
