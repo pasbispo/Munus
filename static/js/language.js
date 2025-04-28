@@ -622,52 +622,62 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const btnWhoWeAre = document.getElementById("btnWhoWeAre");
+    const modalWhoWeAre = document.getElementById("whoWeAreModal");
+    const textoWhoWeAre = document.getElementById("whoWeAreText");
+    const closeBtnWhoWeAre = modalWhoWeAre.querySelector(".close");
 
-export const translations = {
-    pt: "Somos apaixonados pela sustentabilidade e inovação, e nosso propósito é transformar espaços urbanos em áreas produtivas, promovendo inclusão educacional agrícola urbana. Por meio de esforços conjuntos, buscamos não apenas impactar positivamente o meio ambiente, mas também incentivar práticas agrícolas em ambientes urbanos, contribuindo para a conscientização e formação de comunidades locais.",
-    ar: "نحن شغوفون بالاستدامة والابتكار، وهدفنا هو تحويل المساحات الحضرية إلى مناطق منتجة، وتعزيز الإدماج التعليمي الزراعي الحضري. من خلال الجهود المشتركة، نسعى ليس فقط للتأثير إيجابياً على البيئة، ولكن أيضاً لتشجيع الممارسات الزراعية في البيئات الحضرية، والمساهمة في تعزيز الوعي وتشكيل المجتمعات المحلية.",
-    en: "We are passionate about sustainability and innovation, and our purpose is to transform urban spaces into productive areas, promoting agricultural educational inclusion in urban settings. Through collective efforts, we aim not only to positively impact the environment but also to encourage agricultural practices in urban environments, contributing to awareness and the empowerment of local communities.",
-    es: "Nos apasiona la sostenibilidad y la innovación, y nuestro propósito es transformar espacios urbanos en áreas productivas, promoviendo la inclusión educativa agrícola en entornos urbanos. A través de esfuerzos colectivos, buscamos no solo impactar positivamente el medio ambiente, sino también fomentar prácticas agrícolas en entornos urbanos, contribuyendo a la concienciación y la formación de las comunidades locales."
-};
+    const textosWhoWeAre = {
+        "en": `<strong>Our team is made up of professionals passionate about sustainability and innovation.</strong><br><br>
+We work together to transform urban spaces into productive areas, promoting financial inclusion and agricultural education.`,
+        "pt": `<strong>Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação.</strong><br><br>
+Trabalhamos juntos para transformar espaços urbanos em áreas produtivas, promovendo inclusão financeira e educação agrícola.`,
+        "es": `<strong>Nuestro equipo está compuesto por profesionales apasionados por la sostenibilidad y la innovación.</strong><br><br>
+Trabajamos juntos para transformar espacios urbanos en áreas productivas, promoviendo la inclusión financiera y la educación agrícola.`,
+        "ar": `<strong>يتكون فريقنا من محترفين شغوفين بالاستدامة والابتكار.</strong><br><br>
+نحن نعمل معًا لتحويل المساحات الحضرية إلى مناطق منتجة، وتعزيز الشمول المالي والتعليم الزراعي.`
+    };
 
-export function getTranslation(language) {
-    return translations[language];
-}
+    function obterTextoWhoWeAre(lang) {
+        return textosWhoWeAre[lang] || textosWhoWeAre["en"];
+    }
 
+    function atualizarTextoModalWhoWeAre() {
+        const langAtual = document.documentElement.lang || "en";
+        textoWhoWeAre.innerHTML = obterTextoWhoWeAre(langAtual);
+    }
 
+    btnWhoWeAre.addEventListener("click", function (event) {
+        event.preventDefault();
+        atualizarTextoModalWhoWeAre(); // Atualiza o texto antes de abrir o modal
+        modalWhoWeAre.style.display = "flex";
+    });
 
+    closeBtnWhoWeAre.addEventListener("click", function () {
+        modalWhoWeAre.style.display = "none";
+    });
 
+    window.addEventListener("click", function (event) {
+        if (event.target === modalWhoWeAre) {
+            modalWhoWeAre.style.display = "none";
+        }
+    });
 
-
-
-
-
-
-import { getTranslation } from './static/scripts/translations.js';
-
-// Vincula o evento ao botão "Who We Are"
-document.getElementById('btnWhoWeAre').addEventListener('click', () => {
-    const modal = document.getElementById('whoWeAreModal'); // Modal correspondente ao "Who We Are"
-    const textContainer = document.getElementById('whoWeAreText'); // Elemento de texto no modal
-
-    // Obtém o idioma ativo
-    const selectedLanguage = document.querySelector('.language-menu button.active')?.getAttribute('data-lang') || 'pt';
-
-    // Atualiza o texto no modal com a tradução
-    textContainer.innerHTML = getTranslation(selectedLanguage);
-
-    // Exibe o modal
-    modal.style.display = 'block';
+    document.querySelectorAll("[data-lang]").forEach(element => {
+        const key = element.getAttribute("data-lang");
+        if (textosWhoWeAre[document.documentElement.lang] && textosWhoWeAre[document.documentElement.lang][key]) {
+            element.textContent = textosWhoWeAre[document.documentElement.lang][key];
+        } else {
+            console.warn(`Chave de tradução não encontrada: ${key}`);
+        }
+    });
 });
 
-// Função para fechar o modal
-function closeWhoWeAre() {
-    const modal = document.getElementById('whoWeAreModal');
-    modal.style.display = 'none';
-}
 
-// Fecha o modal ao clicar no botão "close"
-document.querySelector('#whoWeAreModal .close').addEventListener('click', closeWhoWeAre);
+
+
+
 
 
 
