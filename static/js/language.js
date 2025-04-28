@@ -567,11 +567,17 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
 مهمتنا هي تسهيل الوصول إلى الإنتاج المحلي للأغذية، ومساعدته على الازدهار وخلق فرص اقتصادية وغذائية مستدامة. بالإضافة إلى ذلك، نسعى إلى بناء مستقبل أكثر خضرة وإنتاجية، حيث يتمكن كل مزارع حضري من الحصول على الموارد اللازمة لزراعة محاصيله.<br><br>
 
 ندرك أن مشروعنا هو مشروع مؤثر ويجلب العديد من الفوائد للمجتمع. وباعتباره مشروعًا اجتماعيًا بدون رعاية، نطلب مساعدتكم في جمع التبرعات. طريقتنا الرئيسية لجمع التبرعات هي من خلال العملات المشفرة، مما يضمن الأمان والشفافية والكفاءة المالية. كما نقبل أشكالًا أخرى من التبرعات، مما يسمح لعدد أكبر من الناس بالمساهمة في نمو المشروع.</strong>`,
+
+
+
+
+whoWeAre: {
+            "en": `<strong>Who We Are</strong><br>Our team consists of professionals passionate about sustainability and innovation...`,
+            "pt": `<strong>Quem Somos</strong><br>Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação...`,
+            "es": `<strong>Quiénes Somos</strong><br>Nuestro equipo está compuesto por profesionales apasionados por la sostenibilidad y la innovación...`,
+            "ar": `<strong>من نحن</strong><br>يتكون فريقنا من محترفين شغوفين بالاستدامة والابتكار...`
+ }
     };
-
-
-
-
 
 
 
