@@ -625,6 +625,16 @@ whoWeAre: {
 
 
 
+export const translations = {
+    pt: "Somos apaixonados pela sustentabilidade e inovação, e nosso propósito é transformar espaços urbanos em áreas produtivas, promovendo inclusão educacional agrícola urbana. Por meio de esforços conjuntos, buscamos não apenas impactar positivamente o meio ambiente, mas também incentivar práticas agrícolas em ambientes urbanos, contribuindo para a conscientização e formação de comunidades locais.",
+    ar: "نحن شغوفون بالاستدامة والابتكار، وهدفنا هو تحويل المساحات الحضرية إلى مناطق منتجة، وتعزيز الإدماج التعليمي الزراعي الحضري. من خلال الجهود المشتركة، نسعى ليس فقط للتأثير إيجابياً على البيئة، ولكن أيضاً لتشجيع الممارسات الزراعية في البيئات الحضرية، والمساهمة في تعزيز الوعي وتشكيل المجتمعات المحلية.",
+    en: "We are passionate about sustainability and innovation, and our purpose is to transform urban spaces into productive areas, promoting agricultural educational inclusion in urban settings. Through collective efforts, we aim not only to positively impact the environment but also to encourage agricultural practices in urban environments, contributing to awareness and the empowerment of local communities.",
+    es: "Nos apasiona la sostenibilidad y la innovación, y nuestro propósito es transformar espacios urbanos en áreas productivas, promoviendo la inclusión educativa agrícola en entornos urbanos. A través de esfuerzos colectivos, buscamos no solo impactar positivamente el medio ambiente, sino también fomentar prácticas agrícolas en entornos urbanos, contribuyendo a la concienciación y la formación de las comunidades locales."
+};
+
+export function getTranslation(language) {
+    return translations[language];
+}
 
 
 
