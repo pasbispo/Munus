@@ -571,6 +571,11 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
 
 
 
+
+
+
+
+
     function obterTextoProjeto(lang) {
         return textos[lang] || textos["en"];
     }
