@@ -518,68 +518,31 @@ document.querySelectorAll('*').forEach(el => {
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const btnProjeto = document.getElementById("btnProjeto");
     const modalProjeto = document.getElementById("modalProjeto");
     const textoProjeto = document.getElementById("textoProjeto");
     const closeBtn = document.querySelector(".close");
 
+    // Um único objeto para armazenar todos os textos traduzidos
     const textos = {
-        projeto:{
-         "en": `<strong>Dear collaborators,</strong><br><br>
-The Shelf Plantation is a sustainable urban agriculture initiative focused on innovation in the cultivation of food and medicinal plants. Our goal is to transform domestic spaces into productive areas, especially in small spaces, promoting a natural garden at home.<br><br>
-
-In our home, we can have cabinets with plants aimed at healthier eating. In many homes, there isn’t much space for planting tomatoes, bell peppers, onions, cilantro, mint, basil, and other viable crops. However, it’s possible to have a small shelf near the window or in the hall with plants that contribute to your diet. In other homes, with larger spaces, such as an unused rooftop, cabinets with multiple shelves and plants can be installed to supply the consumption needs of the residents. In case of surplus production, these can even be used to generate extra income.<br><br>
-
-Our mission is to facilitate access to local food production, helping it thrive and creating sustainable food and economic opportunities. Furthermore, we aim to build a greener and more productive future, where every urban farmer has the necessary resources to cultivate their crops.<br><br>
-
-We realize that our project is impactful and brings many benefits to society. As this is a social project with no sponsorship, we ask for your help with fundraising. Our primary method of fundraising is through cryptocurrencies, ensuring security, transparency, and financial efficiency. We also accept other forms of donation, allowing more people to contribute to the growth of the project.</strong>`,
-
-        "pt": `<strong>Prezados colaboradores,</strong><br><br>
-        A Plantação de Platileira é uma iniciativa de agricultura urbana sustentável, voltada para inovação no cultivo de alimentos e plantas medicinais. Nosso objetivo é transformar espaços dormésticos em áreas produtivas, principalmentes em pequenos espaços, promovendo uma horta natural em casa.<br><br>
-         
-
-       Na nossa casa, podemos ter armários com plantas voltadas para uma alimentação mais saudável. Em muitos lares, não há muito espaço para o plantio de tomates, pimentões, cebolas, coentro, hortelã, manjericão e outras culturas viáveis. Porém, é possível ter uma pequena prateleira perto da janela ou no hall, com plantas que contribuam para a alimentação. Em outras casas, com um espaço maior, como uma cobertura sem uso, podem ser instalados armários com várias prateleiras e plantas voltadas para o consumo dos moradores daquela residência. Em caso de sobras da produção, essas podem ser utilizadas até para gerar uma renda extra.<br><br>
-
-        
-       Nossa missão é facilitar o acesso à produção local de alimentos, ajudando a prosperar e criando oportunidades de alimentação e economia sustentáveis. Além disso, buscamos construir um futuro mais verde e produtivo, no qual cada agricultor urbano tenha os recursos necessários para cultivar suas plantações.<br><br>
-
-
-        Percebemos que nosso projeto é comprometedor e traz muitos benefícios para a sociedade. Por ser um projeto social e sem patrocínio, pedimos a sua ajuda com a arrecadação. Nosso principal método de arrecadação é através de criptomoedas, garantindo segurança, transparência e eficiência financeira. Também aceitamos outras formas de doação, permitindo que mais pessoas contribuam para o crescimento do projeto.</strong>`,
-
-        "es": `<strong>Estimados colaboradores,</strong><br><br>
-
-La Plantación de Estantería es una iniciativa de agricultura urbana sostenible, enfocada en la innovación en el cultivo de alimentos y plantas medicinales. Nuestro objetivo es transformar espacios domésticos en áreas productivas, especialmente en pequeños espacios, promoviendo un huerto natural en casa.<br><br>
-
-En nuestra casa, podemos tener armarios con plantas destinadas a una alimentación más saludable. En muchos hogares, no hay mucho espacio para cultivar tomates, pimientos, cebollas, cilantro, menta, albahaca y otros cultivos viables. Sin embargo, es posible tener una pequeña estantería cerca de la ventana o en el recibidor con plantas que contribuyan a la alimentación. En otras casas, con un espacio mayor, como una azotea sin uso, se pueden instalar armarios con varias estanterías y plantas destinadas al consumo de los residentes. En caso de excedente de producción, estos se pueden utilizar incluso para generar ingresos adicionales.<br><br>
-
-Nuestra misión es facilitar el acceso a la producción local de alimentos, ayudando a que prospere y creando oportunidades de alimentación y economía sostenibles. Además, buscamos construir un futuro más verde y productivo, en el que cada agricultor urbano tenga los recursos necesarios para cultivar sus plantaciones.<br><br>
-
-Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios a la sociedad. Como este es un proyecto social sin patrocinio, pedimos su ayuda con la recaudación. Nuestro principal método de recaudación es a través de criptomonedas, garantizando seguridad, transparencia y eficiencia financiera. También aceptamos otras formas de donación, permitiendo que más personas contribuyan al crecimiento del proyecto.</strong>`,
-
-        "ar": `<strong>أعزائي المتعاونين،</strong><br><br>
-        مشروع زراعة بلاتيليرا هو مبادرة للزراعة الحضرية المستدامة، تركز على الابتكار في زراعة الأغذية والأعشاب الطبية<strong>أعزائي المتعاونين،</strong><br><br>
-"مشروع زراعة الأرفف" هو مبادرة للزراعة الحضرية المستدامة، تركز على الابتكار في زراعة الأغذية والنباتات الطبية. هدفنا هو تحويل المساحات المنزلية إلى مناطق إنتاجية، خاصة في المساحات الصغيرة، وتعزيز وجود حديقة طبيعية في المنزل.<br><br>
-
-في منازلنا، يمكننا أن نستخدم الخزانات لزراعة النباتات التي تهدف إلى تناول غذاء أكثر صحة. في العديد من المنازل، لا توجد مساحة كافية لزراعة الطماطم، الفلفل، البصل، الكزبرة، النعناع، الريحان، والمحاصيل الأخرى القابلة للزراعة. ولكن، يمكن تخصيص رف صغير قرب النافذة أو في الممر لزراعة النباتات التي تدعم التغذية. أما في المنازل ذات المساحات الأكبر، مثل الأسطح غير المستغلة، يمكن تركيب خزانات تحتوي على عدة أرفف ونباتات مخصصة لتلبية احتياجات سكان المنزل. في حالة وجود فائض في الإنتاج، يمكن استخدامه حتى لتحقيق دخل إضافي.<br><br>
-
-مهمتنا هي تسهيل الوصول إلى الإنتاج المحلي للأغذية، ومساعدته على الازدهار وخلق فرص اقتصادية وغذائية مستدامة. بالإضافة إلى ذلك، نسعى إلى بناء مستقبل أكثر خضرة وإنتاجية، حيث يتمكن كل مزارع حضري من الحصول على الموارد اللازمة لزراعة محاصيله.<br><br>
-
-ندرك أن مشروعنا هو مشروع مؤثر ويجلب العديد من الفوائد للمجتمع. وباعتباره مشروعًا اجتماعيًا بدون رعاية، نطلب مساعدتكم في جمع التبرعات. طريقتنا الرئيسية لجمع التبرعات هي من خلال العملات المشفرة، مما يضمن الأمان والشفافية والكفاءة المالية. كما نقبل أشكالًا أخرى من التبرعات، مما يسمح لعدد أكبر من الناس بالمساهمة في نمو المشروع.</strong>`,
-
-},
+        projeto: {
+            "en": `<strong>Dear collaborators,</strong><br><br>
+The Shelf Plantation is a sustainable urban agriculture initiative focused on innovation in the cultivation of food and medicinal plants...`,
+            "pt": `<strong>Prezados colaboradores,</strong><br><br>
+A Plantação de Platileira é uma iniciativa de agricultura urbana sustentável...`,
+            "es": `<strong>Estimados colaboradores,</strong><br><br>
+La Plantación de Estantería es una iniciativa de agricultura urbana sostenible...`,
+            "ar": `<strong>أعزائي المتعاونين،</strong><br><br>
+مشروع زراعة بلاتيليرا هو مبادرة للزراعة الحضرية المستدامة...`
+        },
+        whoWeAre: {
+            "en": `<strong>Who We Are</strong><br>Our team consists of professionals passionate about sustainability and innovation...`,
+            "pt": `<strong>Quem Somos</strong><br>Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação...`,
+            "es": `<strong>Quiénes Somos</strong><br>Nuestro equipo está compuesto por profesionales apasionados por la sostenibilidad y la innovación...`,
+            "ar": `<strong>من نحن</strong><br>يتكون فريقنا من محترفين شغوفين بالاستدامة والابتكار...`
+        }
     };
-
-
-   WhoWeAres = {
-    en: `<strong>Who We Are</strong><br>Our team consists of professionals passionate about sustainability and innovation. We work together to transform urban spaces into productive areas, promoting financial inclusion and agricultural education.`,
-    pt: `<strong>Quem Somos</strong><br>Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação. Trabalhamos juntos para transformar espaços urbanos em áreas produtivas, promovendo inclusão financeira e educação agrícola.`,
-    es: `<strong>Quiénes Somos</strong><br>Nuestro equipo está compuesto por profesionales apasionados por la sostenibilidad y la innovación. Trabajamos juntos para transformar espacios urbanos en áreas productivas, promoviendo inclusión financiera y educación agrícola.`,
-    ar: `<strong>من نحن</strong><br>يتكون فريقنا من محترفين شغوفين بالاستدامة والابتكار. نعمل معًا لتحويل المساحات الحضرية إلى مناطق إنتاجية، مع تعزيز الشمول المالي والتعليم الزراعي.`
-}
-};
-
 
     // Função para obter textos dinâmicos
     function obterTexto(tipo, lang) {
@@ -632,8 +595,6 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
 
 
 
-
-
 // Função para abrir o modal de contato
 function openContact() {
     const contactModal = document.getElementById("contactModal");
@@ -648,15 +609,6 @@ function closeContact() {
 
 
 
-
-// Função para traduzir o texto
-function translateText(language) {
-    // Obtém o elemento do HTML pelo ID
-    const textElement = document.getElementById("whoWeAreText");
-    
-    // Atualiza o texto com base na tradução selecionada
-    textElement.innerHTML = translations[language] || translations["pt"]; // Padrão: português
-}
 
 
 
