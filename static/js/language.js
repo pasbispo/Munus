@@ -536,6 +536,9 @@ Our mission is to facilitate access to local food production, helping it thrive 
 
 We realize that our project is impactful and brings many benefits to society. As this is a social project with no sponsorship, we ask for your help with fundraising. Our primary method of fundraising is through cryptocurrencies, ensuring security, transparency, and financial efficiency. We also accept other forms of donation, allowing more people to contribute to the growth of the project.</strong>`,
 
+"en": `"We are passionate about sustainability and innovation, and our purpose is to transform urban spaces into productive areas, promoting agricultural educational inclusion in urban settings. Through collective efforts, we aim not only to positively impact the environment but also to encourage agricultural practices in urban environments, contributing to awareness and the empowerment of local communities."`,
+
+
         "pt": `<strong>Prezados colaboradores,</strong><br><br>
         A Plantação de Platileira é uma iniciativa de agricultura urbana sustentável, voltada para inovação no cultivo de alimentos e plantas medicinais. Nosso objetivo é transformar espaços dormésticos em áreas produtivas, principalmentes em pequenos espaços, promovendo uma horta natural em casa.<br><br>
          
@@ -548,6 +551,9 @@ We realize that our project is impactful and brings many benefits to society. As
 
         Percebemos que nosso projeto é comprometedor e traz muitos benefícios para a sociedade. Por ser um projeto social e sem patrocínio, pedimos a sua ajuda com a arrecadação. Nosso principal método de arrecadação é através de criptomoedas, garantindo segurança, transparência e eficiência financeira. Também aceitamos outras formas de doação, permitindo que mais pessoas contribuam para o crescimento do projeto.</strong>`,
 
+ "pt": `"Somos apaixonados pela sustentabilidade e inovação, e nosso propósito é transformar espaços urbanos em áreas produtivas, promovendo inclusão educacional agrícola urbana. Por meio de esforços conjuntos, buscamos não apenas impactar positivamente o meio ambiente, mas também incentivar práticas agrícolas em ambientes urbanos, contribuindo para a conscientização e formação de comunidades locais."`,
+
+
         "es": `<strong>Estimados colaboradores,</strong><br><br>
 
 La Plantación de Estantería es una iniciativa de agricultura urbana sostenible, enfocada en la innovación en el cultivo de alimentos y plantas medicinales. Nuestro objetivo es transformar espacios domésticos en áreas productivas, especialmente en pequeños espacios, promoviendo un huerto natural en casa.<br><br>
@@ -557,6 +563,12 @@ En nuestra casa, podemos tener armarios con plantas destinadas a una alimentaci�
 Nuestra misión es facilitar el acceso a la producción local de alimentos, ayudando a que prospere y creando oportunidades de alimentación y economía sostenibles. Además, buscamos construir un futuro más verde y productivo, en el que cada agricultor urbano tenga los recursos necesarios para cultivar sus plantaciones.<br><br>
 
 Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios a la sociedad. Como este es un proyecto social sin patrocinio, pedimos su ayuda con la recaudación. Nuestro principal método de recaudación es a través de criptomonedas, garantizando seguridad, transparencia y eficiencia financiera. También aceptamos otras formas de donación, permitiendo que más personas contribuyan al crecimiento del proyecto.</strong>`,
+
+"es": `"Nos apasiona la sostenibilidad y la innovación, y nuestro propósito es transformar espacios urbanos en áreas productivas, promoviendo la inclusión educativa agrícola en entornos urbanos. A través de esfuerzos colectivos, buscamos no solo impactar positivamente el medio ambiente, sino también fomentar prácticas agrícolas en entornos urbanos, contribuyendo a la concienciación y la formación de las comunidades locales."`,
+
+
+
+
 
         "ar": `<strong>أعزائي المتعاونين،</strong><br><br>
         مشروع زراعة بلاتيليرا هو مبادرة للزراعة الحضرية المستدامة، تركز على الابتكار في زراعة الأغذية والأعشاب الطبية<strong>أعزائي المتعاونين،</strong><br><br>
@@ -569,15 +581,11 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
 ندرك أن مشروعنا هو مشروع مؤثر ويجلب العديد من الفوائد للمجتمع. وباعتباره مشروعًا اجتماعيًا بدون رعاية، نطلب مساعدتكم في جمع التبرعات. طريقتنا الرئيسية لجمع التبرعات هي من خلال العملات المشفرة، مما يضمن الأمان والشفافية والكفاءة المالية. كما نقبل أشكالًا أخرى من التبرعات، مما يسمح لعدد أكبر من الناس بالمساهمة في نمو المشروع.</strong>`,
 
 
+ "ar": `"نحن شغوفون بالاستدامة والابتكار، وهدفنا هو تحويل المساحات الحضرية إلى مناطق منتجة، وتعزيز الإدماج التعليمي الزراعي الحضري. من خلال الجهود المشتركة، نسعى ليس فقط للتأثير إيجابياً على البيئة، ولكن أيضاً لتشجيع الممارسات الزراعية في البيئات الحضرية، والمساهمة في تعزيز الوعي وتشكيل المجتمعات المحلية."`,
 
 
-whoWeAre: {
-            "en": `<strong>Who We Are</strong><br>Our team consists of professionals passionate about sustainability and innovation...`,
-            "pt": `<strong>Quem Somos</strong><br>Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação...`,
-            "es": `<strong>Quiénes Somos</strong><br>Nuestro equipo está compuesto por profesionales apasionados por la sostenibilidad y la innovación...`,
-            "ar": `<strong>من نحن</strong><br>يتكون فريقنا من محترفين شغوفين بالاستدامة والابتكار...`
- }
-    };
+
+   };
 
 
 
@@ -625,16 +633,6 @@ whoWeAre: {
 
 
 
-export const translations = {
-    pt: "Somos apaixonados pela sustentabilidade e inovação, e nosso propósito é transformar espaços urbanos em áreas produtivas, promovendo inclusão educacional agrícola urbana. Por meio de esforços conjuntos, buscamos não apenas impactar positivamente o meio ambiente, mas também incentivar práticas agrícolas em ambientes urbanos, contribuindo para a conscientização e formação de comunidades locais.",
-    ar: "نحن شغوفون بالاستدامة والابتكار، وهدفنا هو تحويل المساحات الحضرية إلى مناطق منتجة، وتعزيز الإدماج التعليمي الزراعي الحضري. من خلال الجهود المشتركة، نسعى ليس فقط للتأثير إيجابياً على البيئة، ولكن أيضاً لتشجيع الممارسات الزراعية في البيئات الحضرية، والمساهمة في تعزيز الوعي وتشكيل المجتمعات المحلية.",
-    en: "We are passionate about sustainability and innovation, and our purpose is to transform urban spaces into productive areas, promoting agricultural educational inclusion in urban settings. Through collective efforts, we aim not only to positively impact the environment but also to encourage agricultural practices in urban environments, contributing to awareness and the empowerment of local communities.",
-    es: "Nos apasiona la sostenibilidad y la innovación, y nuestro propósito es transformar espacios urbanos en áreas productivas, promoviendo la inclusión educativa agrícola en entornos urbanos. A través de esfuerzos colectivos, buscamos no solo impactar positivamente el medio ambiente, sino también fomentar prácticas agrícolas en entornos urbanos, contribuyendo a la concienciación y la formación de las comunidades locales."
-};
-
-export function getTranslation(language) {
-    return translations[language];
-}
 
 
 
