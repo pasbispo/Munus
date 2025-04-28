@@ -567,7 +567,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         Nuestra misión es facilitar el acceso a la producción local de alimentos, ayudando a que prospere y creando oportunidades de alimentación y economía sostenibles. Además, buscamos construir un futuro más verde y productivo, en el que cada agricultor urbano tenga los recursos necesarios para cultivar sus plantaciones.<br><br>
 
-        Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios a la sociedad. Como este es un proyecto social sin patrocinio, pedimos su ayuda con la recaudación. Nuestro principal método de recaudación es a través de criptomonedas, garantizando seguridad, transparencia y eficiencia financiera. También aceptamos otras formas de donación, permitiendo que más personas contribuyan al crecimiento del proyecto.</strong>
+        Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios a la sociedad. Como este es un proyecto social sin patrocinio, pedimos su ayuda con la recaudación. Nuestro principal método de recaudación es a través de criptomonedas, garantizando seguridad, transparencia y eficiencia financiera. También aceptamos otras formas de donación, permitiendo que más personas contribuyan al crecimiento del proyecto.</strong>`,
 
 
         "ar": `<strong>أعزائي المتعاونين،</strong><br><br>
@@ -578,7 +578,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 مهمتنا هي تسهيل الوصول إلى الإنتاج المحلي للأغذية، ومساعدته على الازدهار وخلق فرص اقتصادية وغذائية مستدامة. بالإضافة     إلى ذلك، نسعى إلى بناء مستقبل أكثر خضرة وإنتاجية، حيث يتمكن كل مزارع حضري من الحصول على الموارد اللازمة لزراعة محاصيله.<br><br>
 
-ندرك أن مشروعنا هو مشروع مؤثر ويجلب العديد من الفوائد للمجتمع. وباعتباره مشروعًا اجتماعيًا بدون رعاية، نطلب مساعدتكم في جمع التبرعات. طريقتنا الرئيسية لجمع التبرعات هي من خلال العملات المشفرة، مما يضمن الأمان والشفافية والكفاءة المالية. كما نقبل أشكالًا أخرى من التبرعات، مما يسمح لعدد أكبر من الناس بالمساهمة في نمو المشروع.</strong>
+ندرك أن مشروعنا هو مشروع مؤثر ويجلب العديد من الفوائد للمجتمع. وباعتباره مشروعًا اجتماعيًا بدون رعاية، نطلب مساعدتكم في جمع التبرعات. طريقتنا الرئيسية لجمع التبرعات هي من خلال العملات المشفرة، مما يضمن الأمان والشفافية والكفاءة المالية. كما نقبل أشكالًا أخرى من التبرعات، مما يسمح لعدد أكبر من الناس بالمساهمة في نمو المشروع.</strong>`,
 
    };
 
