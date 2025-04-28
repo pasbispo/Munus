@@ -804,7 +804,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeBtnPartners = modalPartners.querySelector(".close");
 
     const textosPartners = {
-        "en": `
+        "en":Binance `
         <li>John & Sons</li>
         <li>Green Earth Initiatives</li>
         <li>Urban Farmers United</li>
@@ -865,6 +865,69 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btnContact = document.querySelector("button[data-lang='contact']");
+    const modalContact = document.getElementById("contactModal");
+    const closeBtnContact = modalContact.querySelector(".close");
+
+    const textosContact = {
+        "en": `
+        <p><strong>Email:</strong> contact@munus.com</p>
+        <p><strong>Phone:</strong> +55 71 9999-9999</p>
+        <p><strong>Address:</strong> Example Street, 123, Salvador, BA, Brazil</p>
+        `,
+        "pt": `
+        <p><strong>Email:</strong> contato@munus.com</p>
+        <p><strong>Telefone:</strong> +55 71 9999-9999</p>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123, Salvador, BA, Brasil</p>
+        `,
+        "es": `
+        <p><strong>Correo Electrónico:</strong> contacto@munus.com</p>
+        <p><strong>Teléfono:</strong> +55 71 9999-9999</p>
+        <p><strong>Dirección:</strong> Calle Ejemplo, 123, Salvador, BA, Brasil</p>
+        `,
+        "ar": `
+        <p><strong>البريد الإلكتروني:</strong> contact@munus.com</p>
+        <p><strong>الهاتف:</strong> +55 71 9999-9999</p>
+        <p><strong>العنوان:</strong> شارع إكزامبل، 123، سلفادور، باهيا، البرازيل</p>
+        `
+    };
+
+    function obterTextoContact(lang) {
+        return textosContact[lang] || textosContact["en"];
+    }
+
+    function atualizarTextoModalContact() {
+        const langAtual = document.documentElement.lang || "en";
+        modalContact.querySelector("div.modal-content").innerHTML = obterTextoContact(langAtual);
+    }
+
+    btnContact.addEventListener("click", function (event) {
+        event.preventDefault();
+        atualizarTextoModalContact(); // Atualiza o texto antes de abrir o modal
+        modalContact.style.display = "flex";
+    });
+
+    closeBtnContact.addEventListener("click", function () {
+        modalContact.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modalContact) {
+            modalContact.style.display = "none";
+        }
+    });
+});
 
 
 
