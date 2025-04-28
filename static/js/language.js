@@ -797,6 +797,85 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const btnPartners = document.getElementById("btnPartners");
+    const modalPartners = document.getElementById("partnersModal");
+    const textoPartners = modalPartners.querySelector("ul");
+    const closeBtnPartners = modalPartners.querySelector(".close");
+
+    const textosPartners = {
+        "en": `
+        <li>John & Sons</li>
+        <li>Green Earth Initiatives</li>
+        <li>Urban Farmers United</li>
+        <li>EcoFarm Association</li>
+        `,
+        "pt": `
+        <li>John & Sons</li>
+        <li>Iniciativas Terra Verde</li>
+        <li>Agricultores Urbanos Unidos</li>
+        <li>Associação EcoFarm</li>
+        `,
+        "es": `
+        <li>John & Sons</li>
+        <li>Iniciativas Tierra Verde</li>
+        <li>Agricultores Urbanos Unidos</li>
+        <li>Asociación EcoFarm</li>
+        `,
+        "ar": `
+        <li>جون وأبناءه</li>
+        <li>مبادرات الأرض الخضراء</li>
+        <li>مزارعو المدن المتحدون</li>
+        <li>جمعية إيكوفارم</li>
+        `
+    };
+
+    function obterTextoPartners(lang) {
+        return textosPartners[lang] || textosPartners["en"];
+    }
+
+    function atualizarTextoModalPartners() {
+        const langAtual = document.documentElement.lang || "en";
+        textoPartners.innerHTML = obterTextoPartners(langAtual);
+    }
+
+    btnPartners.addEventListener("click", function (event) {
+        event.preventDefault();
+        atualizarTextoModalPartners(); // Atualiza o texto antes de abrir o modal
+        modalPartners.style.display = "flex";
+    });
+
+    closeBtnPartners.addEventListener("click", function () {
+        modalPartners.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modalPartners) {
+            modalPartners.style.display = "none";
+        }
+    });
+
+    document.querySelectorAll("[data-lang]").forEach(element => {
+        const key = element.getAttribute("data-lang");
+        if (textosPartners[document.documentElement.lang] && textosPartners[document.documentElement.lang][key]) {
+            element.textContent = textosPartners[document.documentElement.lang][key];
+        } else {
+            console.warn(`Chave de tradução não encontrada: ${key}`);
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
