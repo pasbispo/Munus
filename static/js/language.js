@@ -582,21 +582,32 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
 
 
 
-    function obterTextoProjeto(lang) {
-        return textos[lang] || textos["en"];
+    // Função para obter textos dinâmicos
+    function obterTexto(tipo, lang) {
+        return textos[tipo][lang] || textos[tipo]["en"]; // En como fallback
     }
 
+    // Função para atualizar o texto do modal do projeto
     function atualizarTextoModal() {
         const langAtual = document.documentElement.lang || "en";
-        textoProjeto.innerHTML = obterTextoProjeto(langAtual);
+        textoProjeto.innerHTML = obterTexto("projeto", langAtual);
     }
 
+    // Função para atualizar o texto da seção "Who We Are"
+    function atualizarWhoWeAre() {
+        const langAtual = document.documentElement.lang || "en";
+        const whoWeAreText = document.getElementById("whoWeAreText");
+        whoWeAreText.innerHTML = obterTexto("whoWeAre", langAtual);
+    }
+
+    // Evento do botão para exibir o modal do projeto
     btnProjeto.addEventListener("click", function (event) {
         event.preventDefault();
         atualizarTextoModal(); // Atualiza o texto antes de abrir o modal
         modalProjeto.style.display = "flex";
     });
 
+    // Evento para fechar o modal
     closeBtn.addEventListener("click", function () {
         modalProjeto.style.display = "none";
     });
@@ -607,19 +618,9 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
         }
     });
 
-   document.querySelectorAll("[data-lang]").forEach(element => {
-    const key = element.getAttribute("data-lang");
-    if (translations[document.documentElement.lang] && translations[document.documentElement.lang][key]) {
-        element.textContent = translations[document.documentElement.lang][key];
-    } else {
-        console.warn(`Chave de tradução não encontrada: ${key}`);
-    }
-
-
-    });
+    // Atualiza o texto dinâmico da seção "Who We Are" ao carregar
+    atualizarWhoWeAre();
 });
-
-
 
 
 
