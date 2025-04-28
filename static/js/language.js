@@ -526,7 +526,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeBtn = document.querySelector(".close");
 
     const textos = {
-        projeto:{
+
          "en": `<strong>Dear collaborators,</strong><br><br>
 The Shelf Plantation is a sustainable urban agriculture initiative focused on innovation in the cultivation of food and medicinal plants. Our goal is to transform domestic spaces into productive areas, especially in small spaces, promoting a natural garden at home.<br><br>
 
@@ -567,16 +567,14 @@ Nos damos cuenta de que nuestro proyecto es impactante y trae muchos beneficios 
 مهمتنا هي تسهيل الوصول إلى الإنتاج المحلي للأغذية، ومساعدته على الازدهار وخلق فرص اقتصادية وغذائية مستدامة. بالإضافة إلى ذلك، نسعى إلى بناء مستقبل أكثر خضرة وإنتاجية، حيث يتمكن كل مزارع حضري من الحصول على الموارد اللازمة لزراعة محاصيله.<br><br>
 
 ندرك أن مشروعنا هو مشروع مؤثر ويجلب العديد من الفوائد للمجتمع. وباعتباره مشروعًا اجتماعيًا بدون رعاية، نطلب مساعدتكم في جمع التبرعات. طريقتنا الرئيسية لجمع التبرعات هي من خلال العملات المشفرة، مما يضمن الأمان والشفافية والكفاءة المالية. كما نقبل أشكالًا أخرى من التبرعات، مما يسمح لعدد أكبر من الناس بالمساهمة في نمو المشروع.</strong>`,
+    };
 
-},
-    
 
-   WhoWeAres = {
+const textos = {
     en: `<strong>Who We Are</strong><br>Our team consists of professionals passionate about sustainability and innovation. We work together to transform urban spaces into productive areas, promoting financial inclusion and agricultural education.`,
     pt: `<strong>Quem Somos</strong><br>Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação. Trabalhamos juntos para transformar espaços urbanos em áreas produtivas, promovendo inclusão financeira e educação agrícola.`,
     es: `<strong>Quiénes Somos</strong><br>Nuestro equipo está compuesto por profesionales apasionados por la sostenibilidad y la innovación. Trabajamos juntos para transformar espacios urbanos en áreas productivas, promoviendo inclusión financiera y educación agrícola.`,
     ar: `<strong>من نحن</strong><br>يتكون فريقنا من محترفين شغوفين بالاستدامة والابتكار. نعمل معًا لتحويل المساحات الحضرية إلى مناطق إنتاجية، مع تعزيز الشمول المالي والتعليم الزراعي.`
-  }
 };
 
 
