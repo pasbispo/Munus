@@ -123,30 +123,6 @@
 
 
 
-<script type="module">
-    import { getTranslation } from './static/scripts/translations.js';
-
-    // Adiciona o evento ao botão "Who We Are"
-    document.getElementById('btnWhoWeAre').addEventListener('click', () => {
-        const modal = document.getElementById('whoWeAreModal'); // Modal correspondente ao "Who We Are"
-        const textContainer = document.getElementById('whoWeAreText'); // Elemento de texto dentro do modal
-
-        // Obtém o idioma selecionado
-        const selectedLanguage = document.querySelector('.language-menu button.active')?.getAttribute('data-lang') || 'pt';
-        
-        // Atualiza o texto no modal com a tradução correta
-        textContainer.innerHTML = getTranslation(selectedLanguage);
-
-        // Exibe o modal
-        modal.style.display = 'block';
-    });
-
-    // Fecha o modal ao clicar no botão de fechar
-    document.querySelector('#whoWeAreModal .close').addEventListener('click', () => {
-        document.getElementById('whoWeAreModal').style.display = 'none';
-    });
-</script>
-
 
 <div id="whoWeAreModal" class="modal">
     <div class="modal-content">
