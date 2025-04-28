@@ -878,7 +878,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const btnContact = document.getElementById("btnContact");
     const modalContact = document.getElementById("contactModal");
-    const contactText = document.getElementById("contactText");
+    const contactText = modalContact.querySelector("#contactText");
     const closeBtnContact = modalContact.querySelector(".close");
 
     const textosContact = {
@@ -910,7 +910,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function atualizarTextoModalContact() {
         const langAtual = document.documentElement.lang || "en";
-        contactText.innerHTML = obterTextoContact(langAtual); // Atualiza dinamicamente o conteúdo do modal
+        contactText.innerHTML = obterTextoContact(langAtual);
     }
 
     btnContact.addEventListener("click", function (event) {
@@ -929,7 +929,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 
 
 
