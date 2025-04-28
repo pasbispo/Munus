@@ -98,19 +98,6 @@
 
 
 
-<!-- Modal Who We Are -->
-<div id="whoWeAreModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeWhoWeAre()">❌</span>
-        <h2 data-lang="whoWeAreTitle">Quem Somos</h2>
-        <p id="whoWeAreText">
-            Nossa equipe é composta por profissionais apaixonados pela sustentabilidade e inovação. Trabalhamos juntos para transformar espaços urbanos em áreas produtivas, promovendo inclusão financeira e educação agrícola.
-        </p>
-    </div>
-</div>
-
-
-
 
 
 
@@ -130,6 +117,31 @@
         </ul>
     </div>
 </div>
+
+
+
+
+
+
+
+<script type="module">
+    import { getTranslation } from './static/scripts/translations.js';
+
+    document.getElementById('btnProjeto').addEventListener('click', () => {
+        const modal = document.getElementById('modalProjeto');
+        const textContainer = document.getElementById('textoProjeto');
+        
+        const selectedLanguage = document.querySelector('.language-menu button.active')?.getAttribute('data-lang') || 'pt';
+        textContainer.innerHTML = getTranslation(selectedLanguage);
+        
+        modal.style.display = 'block';
+    });
+
+    document.querySelector('#modalProjeto .close').addEventListener('click', () => {
+        document.getElementById('modalProjeto').style.display = 'none';
+    });
+</script>
+
 
 
 
