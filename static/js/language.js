@@ -941,6 +941,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const btnOtherNetworks = document.getElementById("btnOtherNetworks");
+    const modalOtherNetworks = document.getElementById("otherNetworksModal");
+    const closeBtnOtherNetworks = modalOtherNetworks.querySelector(".close");
+
+    btnOtherNetworks.addEventListener("click", function (event) {
+        event.preventDefault();
+        modalOtherNetworks.style.display = "flex"; // Abre o modal
+    });
+
+    closeBtnOtherNetworks.addEventListener("click", function () {
+        modalOtherNetworks.style.display = "none"; // Fecha o modal
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modalOtherNetworks) {
+            modalOtherNetworks.style.display = "none"; // Fecha ao clicar fora do modal
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Função para abrir o modal de contato
 function openContact() {
     const contactModal = document.getElementById("contactModal");
