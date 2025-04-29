@@ -636,7 +636,7 @@ My academic background is in Physics, a field entirely different from what we ar
 
 Faced with this reality, the idea of initiating a project aimed at promoting urban and self-sustaining agricultural practices emerged. To make this project viable, I decided to create a website dedicated to fundraising. The innovation here lies in seeking resources primarily through cryptocurrencies, offering a different and modern way of financing capable of attracting supporters with an innovative profile.<br><br>
 
-The project is inspired by a vision of transformation. We believe that by merging technology, sustainability, and urban agricultural practices, we can contribute to building a more balanced and resilient future, where every individual has the opportunity to produce their own food sustainably.`,
+The project is inspired by a vision of transformation. We believe that by merging technology, sustainability, and urban agricultural practices, we can contribute to building a more balanced and resilient future, where every individual has the opportunity to produce their own food sustainably.<strong>`,
 
 
 
@@ -648,7 +648,7 @@ Minha formação acadêmica é na área de Física, um campo distinto do que abo
 
 Diante dessa realidade, surgiu a ideia de iniciar um projeto voltado para incentivar práticas agrícolas urbanas e autossustentáveis. Para tornar esse projeto viável, decidi criar um site dedicado a arrecadar fundos. A inovação aqui é buscar recursos principalmente por meio de criptomoedas, oferecendo um formato de financiamento diferenciado e moderno, capaz de atrair apoiadores com perfil inovador.<br><br>
 
-O projeto é motivado por um ideal de transformação. Acreditamos que, ao unir tecnologia, sustentabilidade e práticas agrícolas urbanas, podemos contribuir para a construção de um futuro mais equilibrado e resiliente, onde cada indivíduo tenha a oportunidade de produzir seu próprio alimento de maneira sustentável.`,
+O projeto é motivado por um ideal de transformação. Acreditamos que, ao unir tecnologia, sustentabilidade e práticas agrícolas urbanas, podemos contribuir para a construção de um futuro mais equilibrado e resiliente, onde cada indivíduo tenha a oportunidade de produzir seu próprio alimento de maneira sustentável.<strong>`,
 
 
         "es": `<strong>Nuestro equipo está compuesto por profesionales apasionados por la sostenibilidad y la innovación.</strong><br><br>
@@ -658,7 +658,7 @@ Mi formación académica es en Física, un campo completamente distinto al que a
 
 Ante esta realidad, surgió la idea de comenzar un proyecto destinado a fomentar prácticas agrícolas urbanas y autosostenibles. Para hacer viable este proyecto, decidí crear un sitio web dedicado a recaudar fondos. La innovación aquí es buscar recursos principalmente a través de criptomonedas, ofreciendo un formato de financiamiento diferente y moderno capaz de atraer apoyos con perfil innovador.<br><br>
 
-El proyecto está inspirado en un ideal de transformación. Creemos que, al combinar tecnología, sostenibilidad y prácticas agrícolas urbanas, podemos contribuir a la construcción de un futuro más equilibrado y resiliente, donde cada individuo tenga la oportunidad de producir sus propios alimentos de manera sostenible.`,
+El proyecto está inspirado en un ideal de transformación. Creemos que, al combinar tecnología, sostenibilidad y prácticas agrícolas urbanas, podemos contribuir a la construcción de un futuro más equilibrado y resiliente, donde cada individuo tenga la oportunidad de producir sus propios alimentos de manera sostenible.<strong>`,
 
         "ar": `<strong>يتكون فريقنا من محترفين شغوفين بالاستدامة والابتكار.</strong><br><br>
 نحن شغوفون بالاستدامة والابتكار، وهدفنا هو تحويل المساحات الحضرية إلى مناطق منتجة، وتعزيز الإدماج التعليمي الزراعي الحضري. من خلال الجهود المشتركة، نسعى ليس فقط للتأثير إيجابياً على البيئة، ولكن أيضاً لتشجيع الممارسات الزراعية في البيئات الحضرية، والمساهمة في تعزيز الوعي وتشكيل المجتمعات المحلية.<br><br>
@@ -667,7 +667,7 @@ El proyecto está inspirado en un ideal de transformación. Creemos que, al comb
 
 أمام هذه الحقيقة، ظهرت فكرة إنشاء مشروع يهدف إلى تشجيع الممارسات الزراعية الحضرية والمستدامة ذاتياً. ولجعل هذا المشروع قابلاً للتنفيذ، قررت إنشاء موقع إلكتروني مخصص لجمع الأموال. الفكرة المبتكرة هنا هي البحث عن الموارد بشكل رئيسي من خلال العملات الرقمية، مما يوفر طريقة تمويل مختلفة وحديثة، قادرة على جذب داعمين يتمتعون برؤية مبتكرة.<br><br>
 
-المشروع مدفوع بفكرة التحول. نحن نعتقد أنه من خلال دمج التكنولوجيا والاستدامة والممارسات الزراعية الحضرية، يمكننا المساهمة في بناء مستقبل أكثر توازناً ومرونة، حيث يكون لكل فرد فرصة لإنتاج غذائه الخاص بطريقة مستدامة..`
+المشروع مدفوع بفكرة التحول. نحن نعتقد أنه من خلال دمج التكنولوجيا والاستدامة والممارسات الزراعية الحضرية، يمكننا المساهمة في بناء مستقبل أكثر توازناً ومرونة، حيث يكون لكل فرد فرصة لإنتاج غذائه الخاص بطريقة مستدامة.<strong>`
     };
 
     function obterTextoWhoWeAre(lang) {
