@@ -1376,6 +1376,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const btnOtherNetworks = document.getElementById("btnOtherNetworks"); // Botão
+    const textosBtn = {
+        "en": "Other Cryptocurrency Networks",
+        "pt": "Outras Redes Criptomoedas",
+        "es": "Otras Redes de Criptomonedas",
+        "ar": "شبكات العملات المشفرة الأخرى"
+    };
+
+    function traduzirTextoBtn() {
+        const langAtual = document.documentElement.lang || "en"; // Obtém o idioma atual
+        btnOtherNetworks.textContent = textosBtn[langAtual] || textosBtn["en"]; // Define o texto traduzido
+    }
+
+    traduzirTextoBtn(); // Chama a função para traduzir o botão ao carregar a página
+
+    // Caso o idioma seja alterado dinamicamente, você pode reconfigurar o botão
+    document.documentElement.addEventListener("langchange", traduzirTextoBtn);
+});
 
 
 
