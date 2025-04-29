@@ -382,6 +382,7 @@ const translations = {
             "address": "Address: Rua Exemplo, 123, Salvador, BA, Brasil",
             "partnersTitle": "Partners",
             "donationsTitle": "Donations",
+"other cryptocurrency networks": "Other Cryptocurrency Networks",
             "Address not available for this cryptocurrency.": "Address Not Available For this Cryptocurrency." 
     },
     "pt": {
@@ -415,6 +416,7 @@ const translations = {
         "address": "Endereço: Rua Exemplo, 123, Salvador, BA, Brasil",
         "partnersTitle": "Parceiros",
         "donationsTitle": "Doações",
+"Other Cryptocurrency Networks": "Outras Redes Criptomoedas",
         "Address not available for this cryptocurrency.": "Endereço não disponível para esta criptomoeda."
     },
     "es": {
@@ -448,6 +450,7 @@ const translations = {
          "address": "Dirección: Rua Exemplo, 123, Salvador, BA, Brasil",
          "partnersTitle": "Socios",
          "donationsTitle": "Donaciones",
+"Other Cryptocurrency Networks": "Otras Redes de Criptomonedas",
          "Address not available for this cryptocurrency.": "Dirección no disponible para esta criptomoneda."
     },
     "ar": {
@@ -481,6 +484,7 @@ const translations = {
         "address": "العنوان: Rua Exemplo, 123, Salvador, BA, Brasil",
     "partnersTitle": "الشركاء",
     "donationsTitle": "التبرعات",
+"Other Cryptocurrency Networks":"شبكات العملات المشفرة الأخرى",
         "Address not available for this cryptocurrency.": "العنوان غير متاح لهذه العملة المشفرة."
     }
 };
