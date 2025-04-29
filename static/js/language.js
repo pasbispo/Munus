@@ -904,41 +904,31 @@ document.addEventListener("DOMContentLoaded", function () {
         `
     };
 
-   function obterTextoPartners(lang) {
-        return textosPartners[lang] || textosPartners["en"];
+    function obterTextoContact(lang) {
+        return textosContact[lang] || textosContact["en"];
     }
 
-    function atualizarTextoModalPartners() {
+    function atualizarTextoModalContact() {
         const langAtual = document.documentElement.lang || "en";
-        textoPartners.innerHTML = obterTextoPartners(langAtual);
+        contactText.innerHTML = obterTextoContact(langAtual);
     }
 
-    btnPartners.addEventListener("click", function (event) {
+    btnContact.addEventListener("click", function (event) {
         event.preventDefault();
-        atualizarTextoModalPartners(); // Atualiza o texto antes de abrir o modal
-        modalPartners.style.display = "flex";
+        atualizarTextoModalContact(); // Atualiza o texto antes de abrir o modal
+        modalContact.style.display = "flex";
     });
 
-    closeBtnPartners.addEventListener("click", function () {
-        modalPartners.style.display = "none";
+    closeBtnContact.addEventListener("click", function () {
+        modalContact.style.display = "none";
     });
 
     window.addEventListener("click", function (event) {
-        if (event.target === modalPartners) {
-            modalPartners.style.display = "none";
-        }
-    });
-
-    document.querySelectorAll("[data-lang]").forEach(element => {
-        const key = element.getAttribute("data-lang");
-        if (textosPartners[document.documentElement.lang] && textosPartners[document.documentElement.lang][key]) {
-            element.textContent = textosPartners[document.documentElement.lang][key];
-        } else {
-            console.warn(`Chave de tradução não encontrada: ${key}`);
+        if (event.target === modalContact) {
+            modalContact.style.display = "none";
         }
     });
 });
-
 
 
 
