@@ -940,6 +940,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const btnOtherNetworks = document.getElementById("btnOtherNetworks"); // Botão para abrir o modal
+    const modalOtherNetworks = document.getElementById("otherNetworksModal"); // Modal
+    const otherNetworksContent = modalOtherNetworks.querySelector("#otherNetworksContent"); // Conteúdo dinâmico
+    const closeBtnOtherNetworks = modalOtherNetworks.querySelector(".close"); // Botão de fechamento
+
+    // Dados das redes criptomoedas
+    const textosOtherNetworks = `
+        <li><strong>BITCOIN - BTC:</strong></li>
+        <li>Smart Chain - (BEP20): 0x6a23069386dbf659c2167052b905a079902e99ce</li>
+        <li>Ethereum: BTC - (ERC20): 0x6a23069386dbf659c2167052b905a079902e99ce</li>
+        <li>SEGWIRBTC - BTC(SegWit): c1quygyxflfypj8etargyhta7p9d5x6hhjf7z00rr</li>
+        <li>Bitcoin - ('1','3','bc1p' and 'bc1q'): 1VLBcroRAjk91yry2afyTN7RGYq1GXsHP</li>
+        <li><strong>ETHEREUM - ETH:</strong></li>
+        <li>Ethereum - (ERC20): 0x6a23069386dbf659c2167052b905a079902e99ce</li>
+        <li>Ethereum - (Base): 0x6a23069386dbf659c2167052b905a079902e99ce</li>
+    `;
+
+    // Atualiza o conteúdo do modal
+    function atualizarTextoModalOtherNetworks() {
+        otherNetworksContent.innerHTML = textosOtherNetworks;
+    }
+
+    // Evento de clique no botão para abrir o modal
+    btnOtherNetworks.addEventListener("click", function (event) {
+        event.preventDefault();
+        atualizarTextoModalOtherNetworks(); // Atualiza o conteúdo antes de abrir o modal
+        modalOtherNetworks.style.display = "flex";
+    });
+
+    // Evento de clique no botão de fechar o modal
+    closeBtnOtherNetworks.addEventListener("click", function () {
+        modalOtherNetworks.style.display = "none";
+    });
+
+    // Fechar o modal ao clicar fora dele
+    window.addEventListener("click", function (event) {
+        if (event.target === modalOtherNetworks) {
+            modalOtherNetworks.style.display = "none";
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const btnOtherNetworks = document.getElementById("btnOtherNetworks");
@@ -1074,4 +1131,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+
+
+
+
 
