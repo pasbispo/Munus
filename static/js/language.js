@@ -1375,27 +1375,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    const btnOtherNetworks = document.getElementById("btnOtherNetworks"); // Botão
-    const textosBtn = {
-        "en": "Other Cryptocurrency Networks",
+    const btnOtherNetworks = document.getElementById("btnOtherNetworks"); // Referência ao botão
+    const textosBtnOtherNetworks = {
         "pt": "Outras Redes Criptomoedas",
+        "en": "Other Cryptocurrency Networks",
         "es": "Otras Redes de Criptomonedas",
         "ar": "شبكات العملات المشفرة الأخرى"
     };
 
-    function traduzirTextoBtn() {
-        const langAtual = document.documentElement.lang || "en"; // Obtém o idioma atual
-        btnOtherNetworks.textContent = textosBtn[langAtual] || textosBtn["en"]; // Define o texto traduzido
+    function traduzirTextoBtnOtherNetworks() {
+        const langAtual = document.documentElement.lang || "pt"; // Obter idioma atual da página
+        btnOtherNetworks.textContent = textosBtnOtherNetworks[langAtual] || textosBtnOtherNetworks["pt"];
     }
 
-    traduzirTextoBtn(); // Chama a função para traduzir o botão ao carregar a página
+    // Traduzir ao carregar a página
+    traduzirTextoBtnOtherNetworks();
 
-    // Caso o idioma seja alterado dinamicamente, você pode reconfigurar o botão
-    document.documentElement.addEventListener("langchange", traduzirTextoBtn);
+    // Traduzir ao alterar o idioma (caso o idioma possa ser alterado dinamicamente)
+    const languageMenu = document.getElementById("languageMenu");
+    languageMenu.addEventListener("click", function (event) {
+        const selectedLang = event.target.getAttribute("onclick").match(/changeLanguage\('(\w+)'\)/);
+        if (selectedLang && selectedLang[1]) {
+            document.documentElement.lang = selectedLang[1]; // Alterar idioma no HTML
+            traduzirTextoBtnOtherNetworks(); // Atualizar o texto do botão
+        }
+    });
 });
-
 
 
 
