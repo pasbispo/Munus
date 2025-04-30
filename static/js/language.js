@@ -1347,6 +1347,43 @@ document.addEventListener("DOMContentLoaded", function () {
 <li>ALGO Algorand: KJAQEUC6XU3JNLZWSE2GSQFEF4TQB2H5RUK6L3GPY3WE3HUR7YT3ZLSI6Q</li>
 
 
+<li><strong>OFFICIAL TRUMP:</strong></li>
+<li>SOL Solana: 2ctmjmmwXY7iuvQGBfM7JEAkLH8aAmg1U6TqnEozx4jQ</li>
+
+
+<li><strong>TONCOIN - TON:</strong></li>
+<li>ETH Ethereum - (ERC20) : 0x33298dcec1173d97a78879895fcf666eacd10625</li>
+<li>TON Toncoin - (MEMO/Tag: 1140243) : EQBX63RAdgShn34EAFMV73Cut7Z15lUZd1hnVva68SEl7sxi</li>
+
+<li><strong>PINETWORK - PI:</strong></li>
+<li>Pinetwork:  MD5HGPHVL73EBDUD2Z4K2VDRLUBC4FFN7GOBLKPK6OPPXH6TED4TQAAAAGLHAGQWMVVSU</li>
+
+
+<li><strong>OKT:</strong></li>
+<li>OKT: 0x33298dcec1173d97a78879895fcf666eacd10625</li>
+
+
+<li><strong>MANTLE - MNT:</strong></li>
+<li>ETH Ethereum - (ERC20) : 0x33298dcec1173d97a78879895fcf666eacd10625</li>
+<li>MNT Mantle: 0x33298dcec1173d97a78879895fcf666eacd10625</li>
+
+
+<li><strong>KASPA - KAS:</strong></li>
+<li>KAS KASPA: qz0kn365zv8j6j40t0g82xkwr95xkx470pnp99qs0dkv0tu2ulvfutrqwptrq</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        `;
 
     // Atualiza o conteúdo do modal
