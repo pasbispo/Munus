@@ -726,32 +726,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const textosDonations = {
         "en": `
-        <li><strong>PayPal:</strong> your-paypal-email@email.com</li>
-        <li><strong>MercadoPago:</strong> your-mercado-pago-key</li>
-        <li><strong>Pix:</strong> your-pix-key</li>
+        <li><strong>PayPal:</strong> pasbispo@gmail.com</li>
+        <li><strong>MercadoPago:</strong> pasbispo@gmail.com</li>
+        <li><strong>Pix:</strong> pasbispo@gmail.com</li>
         <li><strong>Bank:</strong> Example Bank, Branch: 1234, Account: 56789-0</li>
-        <li><strong>Cryptocurrencies:</strong> BTC: 0xBitcoinAddress | ETH: 0xEthereumAddress</li>
+        <li><strong>Meta Mask:</strong> 0xdc1d5b656cfc392f6b782fe0eaa8399541f70971</li>
         `,
         "pt": `
-        <li><strong>PayPal:</strong> seu-email-paypal@email.com</li>
-        <li><strong>MercadoPago:</strong> sua-chave-mercado-pago</li>
-        <li><strong>Pix:</strong> sua-chave-pix</li>
+        <li><strong>PayPal:</strong> pasbispo@gmail.com</li>
+        <li><strong>MercadoPago:</strong> pasbispo@gmail.com</li>
+        <li><strong>Pix:</strong> pasbispo@gmail.com</li>
         <li><strong>Banco:</strong> Banco Exemplo, Agência: 1234, Conta: 56789-0</li>
-        <li><strong>Criptomoedas:</strong> BTC: 0xEndereçoBitcoin | ETH: 0xEndereçoEthereum</li>
+        <li><strong>Meta MAsk:</strong> 0xdc1d5b656cfc392f6b782fe0eaa8399541f70971</li>
         `,
         "es": `
-        <li><strong>PayPal:</strong> su-email-paypal@email.com</li>
-        <li><strong>MercadoPago:</strong> su-clave-mercado-pago</li>
-        <li><strong>Pix:</strong> su-clave-pix</li>
+        <li><strong>PayPal:</strong> pasbispo@gmail.com</li>
+        <li><strong>MercadoPago:</strong> pasbispo@gmail.com</li>
+        <li><strong>Pix:</strong> pasbispo@gmail.com</li>
         <li><strong>Banco:</strong> Banco Ejemplo, Sucursal: 1234, Cuenta: 56789-0</li>
-        <li><strong>Criptomonedas:</strong> BTC: 0xDireccionBitcoin | ETH: 0xDireccionEthereum</li>
+        <li><strong>Meta Mask:</strong> 0xdc1d5b656cfc392f6b782fe0eaa8399541f70971</li>
         `,
         "ar": `
-        <li><strong>PayPal:</strong> بريدك الإلكتروني-لـPayPal@email.com</li>
-        <li><strong>MercadoPago:</strong> مفتاح-سوق-مدفوعاتك</li>
-        <li><strong>Pix:</strong> مفتاح Pix الخاص بك</li>
+        <li><strong>PayPal:</strong> pasbispo@gmail.com</li>
+        <li><strong>MercadoPago:</strong> pasbispo@gmail.com</li>
+        <li><strong>Pix:</strong> مفتاح Pix pasbispo@gmail.com</li>
         <li><strong>البنك:</strong> بنك المثال، الفرع: 1234، الحساب: 56789-0</li>
-        <li><strong>العملات المشفرة:</strong> BTC: 0xعنوانBitcoin | ETH: 0xعنوانEthereum</li>
+        <li><strong>Meta Mask :</strong> 0xdc1d5b656cfc392f6b782fe0eaa8399541f70971</li>
         `
     };
 
